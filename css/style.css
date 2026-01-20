@@ -902,3 +902,48 @@ strong{ font-weight: 900; }
   border: 1px solid rgba(11,31,51,0.18) !important;
 }
 
+/* SERVICES DROPDOWN (DESKTOP) */
+.nav-dd{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dd-menu{
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 230px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.10);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.18);
+  padding: 10px;
+  display: none;
+  z-index: 999;
+}
+
+/* square corners (you wanted straight boxes) */
+.nav-dd-menu{ border-radius: 0 !important; }
+
+.nav-dd-menu a{
+  display: block;
+  padding: 10px 12px;
+  font-family: var(--head);
+  font-weight: 900;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--navy);
+  border-radius: 0 !important;
+}
+
+.nav-dd-menu a:hover{
+  background: rgba(0,179,184,0.10);
+}
+
+/* Hover open on desktop */
+@media (min-width: 741px){
+  .nav-dd:hover .nav-dd-menu{
+    display: block;
+  }
+}
