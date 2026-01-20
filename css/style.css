@@ -987,3 +987,39 @@ strong{ font-weight: 900; }
   margin-top: 6px;
   border-top: 1px solid rgba(0,0,0,0.10);
 }
+
+/* =========================================
+   SUMMIT FLOW FONT OVERRIDE (GLOBAL)
+   ========================================= */
+
+html, body{
+  font-family: "Karla", system-ui !important;
+}
+
+h1,h2,h3,h4,h5,h6,
+.brand-name,
+.nav a,
+.nav-dd > a,
+.nav-dd-menu a,
+.menu,
+.btn,
+.chip-kicker,
+.chip-main,
+.eyebrow,
+.badge strong{
+  font-family: "Unica One", system-ui !important;
+}
+
+/* keep small UI text readable */
+.muted, .small, label, input, textarea, .badge span{
+  font-family: "Karla", system-ui !important;
+}
+
+.nav a,
+.menu,
+.btn,
+.brand-name{
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
