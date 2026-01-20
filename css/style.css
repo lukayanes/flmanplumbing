@@ -840,3 +840,41 @@ strong{ font-weight: 900; }
 }
 
 /* If you want:contentReference[oaicite:1]{index=1}*
+
+/* =========================================
+   SQUARE BOX MODE (NO ROUNDED CORNERS)
+   ========================================= */
+
+:root{
+  --r-sm: 0px !important;
+  --r-md: 0px !important;
+  --r-lg: 0px !important;
+}
+
+/* All common “boxes” */
+.hero-left,
+.hero-card,
+.card,
+.badge,
+.bullet,
+.callout,
+.top-chip,
+.mobile-nav,
+.nav a,
+.btn,
+.form input,
+.form textarea,
+.menu{
+  border-radius: 0px !important;
+}
+
+/* If you want the hero section itself square too */
+.hero{
+  border-radius: 0px !important;
+}
+
+/* Optional: make images sharp too */
+.logo{
+  border-radius: 0px !important;
+}
+
