@@ -32,7 +32,7 @@
   --container: 1200px;
 
   /* Hero image hooks */
-  --hero-img: url("../assets/hero.jpg");   /* add this file */
+  --hero-img: url("../assets/flmanhero.jpg");   /* add this file */
   --hero-dim: rgba(0,0,0,0.52);
 
   /* Type */
