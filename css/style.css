@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700;800&family=Unica+One&display=swap');
+
 /* =========================================================
    Florida Man Plumbing — site.css (TAILORED TO YOUR HTML)
    Matches classes from plumbing html:
@@ -745,7 +747,6 @@ strong{ font-weight: 900; }
    HERO BACKGROUND BEHIND FORM (OVERRIDES)
    ========================================= */
 
-/* 1) Make the entire hero section carry the background */
 .hero{
   position: relative;
   background:
@@ -754,12 +755,9 @@ strong{ font-weight: 900; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  /* keep your spacing but make it feel full-bleed */
   border-radius: 0;
 }
 
-/* 2) Add your brand glow over the whole hero (optional but makes it premium) */
 .hero::after{
   content:"";
   position:absolute;
@@ -771,25 +769,21 @@ strong{ font-weight: 900; }
   z-index: 0;
 }
 
-/* 3) Ensure hero children sit above background */
 .hero > *{
   position: relative;
   z-index: 1;
 }
 
-/* 4) Disable the left-only background layer so it doesn't double-stack */
 .hero-left .hero-bg{ display:none; }
 .hero-left .hero-overlay{ display:none; }
 
-/* 5) Make the left side transparent now that hero carries the image */
 .hero-left{
   background: transparent;
   border-radius: var(--r-lg);
   overflow: visible;
-  min-height: auto; /* let content determine height */
+  min-height: auto;
 }
 
-/* 6) Make the left text readable on the image */
 .hero-left-inner{
   color: #fff;
 }
@@ -801,7 +795,6 @@ strong{ font-weight: 900; }
   color: rgba(255,255,255,0.88);
 }
 
-/* Keep eyebrow / badges readable */
 .eyebrow,
 .badge{
   background: rgba(255,255,255,0.10);
@@ -811,7 +804,6 @@ strong{ font-weight: 900; }
 .badge strong{ color:#fff; }
 .badge span{ color: rgba(255,255,255,0.82); }
 
-/* 7) Make the form card look intentional on top of image */
 .hero-card{
   background: rgba(255,255,255,0.94);
   border: 1px solid rgba(255,255,255,0.30);
@@ -819,7 +811,6 @@ strong{ font-weight: 900; }
   box-shadow: 0 22px 60px rgba(0,0,0,0.20);
 }
 
-/* Mobile: keep hero clean and full width */
 @media (max-width: 980px){
   .hero{
     padding: 18px 0 32px;
@@ -831,17 +822,15 @@ strong{ font-weight: 900; }
    ========================================= */
 
 .logo{
-  height: 78px; /* was 60px */
+  height: 78px;
 }
 
 .menu{
   font-size: 16px;
-  padding: 12px 14px; /* bigger tap target */
+  padding: 12px 14px;
   border-radius: 14px;
   letter-spacing: 1px;
 }
-
-/* If you want:contentReference[oaicite:1]{index=1}*
 
 /* =========================================
    SQUARE BOX MODE (NO ROUNDED CORNERS)
@@ -853,7 +842,6 @@ strong{ font-weight: 900; }
   --r-lg: 0px !important;
 }
 
-/* All common “boxes” */
 .hero-left,
 .hero-card,
 .card,
@@ -870,12 +858,10 @@ strong{ font-weight: 900; }
   border-radius: 0px !important;
 }
 
-/* If you want the hero section itself square too */
 .hero{
   border-radius: 0px !important;
 }
 
-/* Optional: make images sharp too */
 .logo{
   border-radius: 0px !important;
 }
@@ -891,13 +877,13 @@ strong{ font-weight: 900; }
 }
 
 .nav a:hover{
-  background: rgba(11,31,51,0.10) !important; /* navy tint */
+  background: rgba(11,31,51,0.10) !important;
   color: var(--navy) !important;
   transform: translateY(-1px);
 }
 
 .nav a.active{
-  background: rgba(255,255,255,0.22) !important; /* light highlight */
+  background: rgba(255,255,255,0.22) !important;
   color: var(--navy) !important;
   border: 1px solid rgba(11,31,51,0.18) !important;
 }
@@ -922,7 +908,6 @@ strong{ font-weight: 900; }
   z-index: 999;
 }
 
-/* square corners (you wanted straight boxes) */
 .nav-dd-menu{ border-radius: 0 !important; }
 
 .nav-dd-menu a{
@@ -941,7 +926,6 @@ strong{ font-weight: 900; }
   background: rgba(0,179,184,0.10);
 }
 
-/* Hover open on desktop */
 @media (min-width: 741px){
   .nav-dd:hover .nav-dd-menu{
     display: block;
@@ -989,10 +973,11 @@ strong{ font-weight: 900; }
 }
 
 /* =========================================
-   SUMMIT FLOW FONT OVERRIDE (GLOBAL)
+   SUMMIT FLOW FONT OVERRIDE (GLOBAL - FINAL)
+   (This must be LAST so it wins)
    ========================================= */
 
-html, body{
+html, body, button, input, textarea, select{
   font-family: "Karla", system-ui !important;
 }
 
@@ -1006,12 +991,15 @@ h1,h2,h3,h4,h5,h6,
 .chip-kicker,
 .chip-main,
 .eyebrow,
-.badge strong{
+.badge strong,
+.card h3,
+.section-head h2,
+.callout h3,
+.bullet strong{
   font-family: "Unica One", system-ui !important;
 }
 
-/* keep small UI text readable */
-.muted, .small, label, input, textarea, .badge span{
+.muted, .small, label, .badge span, .brand-sub, p, span, li{
   font-family: "Karla", system-ui !important;
 }
 
@@ -1022,4 +1010,3 @@ h1,h2,h3,h4,h5,h6,
   letter-spacing: 1px !important;
   text-transform: uppercase !important;
 }
-
