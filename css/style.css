@@ -36,9 +36,9 @@
   --hero-dim: rgba(0,0,0,0.52);
 
   /* Type */
-  --head: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  --body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-
+  --head: "Unica One", system-ui;
+  --body: "Karla", system-ui;
+   
   /* Motion */
   --ease: cubic-bezier(.2,.9,.2,1);
   --t-fast: 160ms;
