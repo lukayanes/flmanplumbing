@@ -2553,3 +2553,48 @@ html.is-loaded .top-hero::before{
   .biz-card{ width: 78vw; }
   .biz-track{ padding: 0 6vw; }
 }
+
+/* Quote form styling */
+.quote-form{
+  display: grid;
+  gap: 10px;
+}
+
+.quote-form input,
+.quote-form textarea{
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(0,0,0,0.28);
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.quote-form textarea{
+  resize: none;
+  min-height: 110px;
+}
+
+.quote-form input::placeholder,
+.quote-form textarea::placeholder{
+  color: rgba(255,255,255,0.72);
+}
+
+.quote-form button{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  background: #1F6FE5;
+  color: #fff;
+  font-weight: 700;
+}
+
+.quote-form button:hover{
+  filter: brightness(1.05);
+}
