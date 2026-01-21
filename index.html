@@ -51,21 +51,26 @@
     </div>
 
     <!-- RIGHT: medium transparent quote form -->
-    <div class="hero-right">
-      <div class="hero-form-card" id="quote">
-        <h3 class="form-title">Request a Free Quote</h3>
-        <p class="form-subtitle">We’ll call you back fast.</p>
+<div class="hero-right">
+  <div class="hero-form-card" id="quote">
+    <h3 class="form-title">Request a Free Quote</h3>
+    <p class="form-subtitle">We’ll call you back fast.</p>
 
-        <!-- Paste your real GHL iframe here -->
-        <div class="form-embed">
-          <!-- iframe goes here -->
-        </div>
+    <form class="quote-form" id="quoteForm">
+      <input name="fullName" type="text" placeholder="Full Name" required />
+      <input name="phone" type="tel" placeholder="Phone Number" required />
+      <input name="email" type="email" placeholder="Email Address" required />
+      <textarea name="message" rows="4" placeholder="Please let us know how we can help you..." required></textarea>
 
-        <p class="form-disclaimer">
-          By submitting, you agree to receive calls/texts. Msg/data rates may apply.
-        </p>
-      </div>
-    </div>
+      <button type="submit">Request a Free Quote</button>
+    </form>
+
+    <p class="form-disclaimer">
+      By submitting, you agree to receive calls/texts. Msg/data rates may apply.
+    </p>
+  </div>
+</div>
+
 
   </div>
 </div>
