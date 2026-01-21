@@ -2598,3 +2598,19 @@ html.is-loaded .top-hero::before{
 .quote-form button:hover{
   filter: brightness(1.05);
 }
+
+
+.biz-more{
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.95;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.biz-card:hover .biz-more{
+  opacity: 1;
+}
