@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&family=Karla:wght@400;600;700&display=swap');
 
 :root{
-  --hero-overlay: rgba(0,0,0,0.75);
+  --hero-overlay: rgba(0,0,0,0.90);
   --nav-text: rgba(255,255,255,0.85);
   --nav-text-strong: #ffffff;
 }
