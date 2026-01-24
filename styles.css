@@ -2790,3 +2790,39 @@ html.is-loaded .top-hero::before{
   scroll-snap-align: start;
 }
 
+.biz-wrap{
+  position: relative;
+}
+
+.biz-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.biz-arrow.left{ left: 8px; }
+.biz-arrow.right{ right: 8px; }
+
+.biz-arrow:hover{
+  background: rgba(0,0,0,0.65);
+}
+
+/* keep arrows off the cards a bit */
+.biz-strip{
+  padding: 0 60px;
+}
+
+
