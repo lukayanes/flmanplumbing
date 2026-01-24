@@ -2526,8 +2526,8 @@ html.is-loaded .top-hero::before{
 .biz-overlay{
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.82),
-    rgba(0,0,0,0.45)
+    rgba(0,0,0,0.68),
+    rgba(0,0,0,0.25)
   );
 }
 
