@@ -2760,3 +2760,17 @@ html.is-loaded .top-hero::before{
   min-width: 0;
 }
 
+.biz-pan-title,
+.biz-pan-sub{
+  text-align: left;
+}
+
+.biz-pan-sub{
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 900px; /* adjust if your title is narrower */
+}
+
+.biz-pan-title{ max-width: 900px; }
+.biz-pan-sub{ max-width: 900px; }
+
