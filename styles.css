@@ -3490,5 +3490,36 @@ body{
 
 .nav-dropdown{ display:inline-flex; }
 
+/* --- HARD CENTER FIX FOR NAV --- */
+.top-nav {
+  width: 100%;
+}
+
+.top-nav-inner {
+  width: 100%;
+  max-width: 1200px;      /* match your container width if different */
+  margin: 0 auto;         /* THIS is the big one */
+  padding: 0 18px;        /* keeps it off the edges */
+  display: flex;
+  align-items: center;
+}
+
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-left { justify-content: flex-end; }
+.nav-right { justify-content: flex-start; }
+
+.nav-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
