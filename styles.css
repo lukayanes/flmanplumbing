@@ -2641,6 +2641,7 @@ html.is-loaded .top-hero::before{
   margin: 0 auto;          /* centers it */
   border-radius: 14px;     /* optional */
   overflow: hidden;        /* optional */
+  background: #0B4EA2;
 }
 
 .top-contact-inner{
@@ -2702,6 +2703,11 @@ html.is-loaded .top-hero::before{
   text-align: left;
   padding-left: 22px;   /* space from divider */
 }
+
+.top-contact-icon{
+  color: #f7b500; /* Florida Man orange */
+}
+
 
 
 /* MOBILE */
