@@ -2636,7 +2636,7 @@ html.is-loaded .top-hero::before{
 
 /* TOP CONTACT BAR */
 .top-contact-bar{
-  width: 50%;
+  width: 100%;
   margin: 0 auto;          /* centers it */
   overflow: hidden;        /* optional */
   background: #0B4EA2;
