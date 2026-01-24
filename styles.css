@@ -2934,3 +2934,13 @@ html.is-loaded .top-hero::before{
   }
 }
 
+.about-split-grid{
+  display: grid !important;
+  grid-template-columns: 1.05fr 1fr !important;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-split-text{ grid-column: 1; }
+.about-split-image{ grid-column: 2; }
+
