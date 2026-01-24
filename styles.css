@@ -3019,12 +3019,13 @@ html.is-loaded .top-hero::before{
 }
 
 .last-cta-panel{
-  background: #ff6a00; /* FL Man orange */
+  background: #ffffff; /* white panel */
   padding: 70px 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 
 .last-cta-panel{
   background: #0b1f33; /* navy */
@@ -3075,6 +3076,62 @@ html.is-loaded .top-hero::before{
 .last-cta-phone:hover{
   text-decoration: underline;
 }
+
+.last-cta-panel h2{
+  margin: 0 0 18px;
+  color: #0b1f33; /* navy */
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  font-size: clamp(22px, 2.2vw, 34px);
+}
+
+/* orange only for “NEED A LICENSED SARASOTA” */
+.last-cta-panel h2 .cta-orange{
+  color: #ff6a00 !important;
+}
+
+.last-cta-sub{
+  margin: 0 0 18px;
+  color: rgba(11,31,51,0.75); /* navy-ish */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.last-cta-body{
+  margin: 0 0 26px;
+  color: rgba(11,31,51,0.85);
+  line-height: 1.7;
+  max-width: 520px;
+  font-size: 15px;
+}
+
+.last-cta-line{
+  width: 44px;
+  height: 3px;
+  border-radius: 999px;
+  background: #ff6a00; /* orange accent line */
+  margin: 0 0 22px;
+}
+
+.last-cta-phone{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #0b1f33; /* navy */
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+.last-cta-phone:hover{
+  color: #ff6a00;
+}
+
 
 /* =========================
    FOOTER
