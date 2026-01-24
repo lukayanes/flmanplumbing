@@ -59,7 +59,8 @@
 }
 
 .nav-left a,
-.nav-right a{
+.nav-right a,
+.nav-dropdown a {
   font-family: "Unica One", system-ui;
   letter-spacing: 1px;
   text-transform: uppercase;
