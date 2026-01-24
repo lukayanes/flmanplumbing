@@ -2700,3 +2700,13 @@ html.is-loaded .top-hero::before{
   }
 }
 
+.biz-pan-kicker{
+  margin: 0 0 6px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #f7b500; /* logo orange */
+  font-size: 11px;
+  opacity: 0.95;
+}
+
