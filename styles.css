@@ -3320,3 +3320,19 @@ html.is-loaded .top-hero::before{
 .last-cta-phone:hover{
   color: #ff6a00 !important;
 }
+
+  /* FORCE last CTA right side to be white no matter what */
+.last-cta{
+  background: transparent !important;
+}
+
+.last-cta-grid{
+  background: transparent !important;
+}
+
+.last-cta-panel{
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #0b1f33 !important;
+}
+
