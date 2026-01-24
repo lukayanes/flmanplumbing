@@ -3336,3 +3336,51 @@ html.is-loaded .top-hero::before{
   color: #0b1f33 !important;
 }
 
+  /* ===== FORCE footer logo to sit LEFT of the paragraph (override everything) ===== */
+.site-footer .footer-brand-row{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  min-width: 0 !important;
+}
+
+.site-footer .footer-brand-row .footer-logo{
+  /* reset any weird global image styles */
+  position: static !important;
+  float: none !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+
+  display: block !important;
+  width: 86px !important;
+  max-width: 86px !important;
+  height: auto !important;
+  max-height: 86px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  flex: 0 0 86px !important;
+  object-fit: contain !important;
+}
+
+.site-footer .footer-brand-row .footer-text{
+  margin: 0 !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+/* Mobile: stack */
+@media (max-width: 700px){
+  .site-footer .footer-brand-row{
+    flex-direction: column !important;
+  }
+  .site-footer .footer-brand-row .footer-logo{
+    width: 150px !important;
+    max-width: 150px !important;
+    max-height: none !important;
+    flex: 0 0 auto !important;
+  }
+}
+
