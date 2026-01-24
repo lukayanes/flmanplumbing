@@ -3151,3 +3151,14 @@ html.is-loaded .top-hero::before{
   color: #ff6a00 !important; /* FL Man orange */
 }
 
+  @media (max-width: 700px){
+  .footer-brand-row{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-brand-row .footer-logo{
+    width: 140px;
+  }
+}
+
