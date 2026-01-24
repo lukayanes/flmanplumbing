@@ -2825,4 +2825,14 @@ html.is-loaded .top-hero::before{
   padding: 0 60px;
 }
 
+.biz-pan-kicker a{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.biz-pan-kicker a:hover{
+  color: #ff6a00; /* FL Man orange */
+}
 
