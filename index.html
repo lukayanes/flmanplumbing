@@ -544,6 +544,48 @@ strip.addEventListener("touchend", () => {
 })();
 </script>
 
+<script>
+(() => {
+  const dd = document.querySelector(".nav-dropdown");
+  if (!dd) return;
+
+  const btn = dd.querySelector(".nav-dropbtn");
+  const menu = dd.querySelector(".nav-dropmenu");
+
+  const close = () => {
+    dd.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  const open = () => {
+    dd.classList.add("is-open");
+    btn.setAttribute("aria-expanded", "true");
+  };
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dd.classList.contains("is-open") ? close() : open();
+  });
+
+  // close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!dd.contains(e.target)) close();
+  });
+
+  // close on ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+
+  // when a menu item is clicked, close it
+  menu.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (a) close();
+  });
+})();
+</script>
+
 
 </body>
 </html>
