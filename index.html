@@ -480,13 +480,52 @@
   strip.addEventListener("mouseenter", () => paused = true);
   strip.addEventListener("mouseleave", () => paused = false);
 
-  // Pause while user scrolls/drags
-  let scrollTimeout = null;
-  strip.addEventListener("scroll", () => {
-    userInteracting = true;
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => userInteracting = false, 400);
-  }, { passive: true });
+  // Pause while user scrolls (wheel/trackpad)
+let scrollTimeout = null;
+strip.addEventListener("scroll", () => {
+  userInteracting = true;
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => userInteracting = false, 600);
+}, { passive: true });
+
+// Drag-to-scroll (desktop)
+let isDown = false;
+let startX = 0;
+let startScrollLeft = 0;
+
+strip.addEventListener("mousedown", (e) => {
+  isDown = true;
+  userInteracting = true;
+  startX = e.pageX - strip.offsetLeft;
+  startScrollLeft = strip.scrollLeft;
+});
+
+strip.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - strip.offsetLeft;
+  const walk = (x - startX); // drag distance
+  strip.scrollLeft = startScrollLeft - walk;
+});
+
+const endDrag = () => {
+  if (!isDown) return;
+  isDown = false;
+  // resume auto-scroll shortly after drag ends
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => userInteracting = false, 700);
+};
+
+strip.addEventListener("mouseup", endDrag);
+strip.addEventListener("mouseleave", endDrag);
+
+// Touch: keep your existing touch handlers (just slightly longer resume)
+strip.addEventListener("touchstart", () => userInteracting = true, { passive: true });
+strip.addEventListener("touchend", () => {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => userInteracting = false, 700);
+}, { passive: true });
+
 
   // Pause on touch
   strip.addEventListener("touchstart", () => userInteracting = true, { passive: true });
