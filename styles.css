@@ -2776,19 +2776,14 @@ html.is-loaded .top-hero::before{
 
 .biz-strip{
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* Firefox */
+  cursor: grab;
 }
 
-.biz-strip::-webkit-scrollbar{
-  display: none; /* Chrome/Safari */
-}
-
-.biz-track{
-  display: flex;
-  gap: 18px;
-  width: max-content;
+.biz-strip:active{
+  cursor: grabbing;
 }
 
 .biz-card{
