@@ -2655,18 +2655,18 @@ html.is-loaded .top-hero::before{
   gap: 14px;
   padding: 12px 18px;
   text-decoration: none;
-  color: #0b1f33 !important; /* blue/navy words */
+  color: #ffffff !important;
 }
 
 .top-contact-item:first-child{
-  border-right: 1px solid rgba(11,31,51,0.25) !important; /* blue/navy divider */
+  border-right: 1px solid rgba(255,255,255,0.25);
 }
 
 .top-contact-icon{
   font-size: 22px;
   line-height: 1;
   opacity: 0.95;
-  color: #0b1f33 !important; /* blue/navy icon */
+  color: #ffffff !important;
 }
 
 .top-contact-label{
@@ -2675,14 +2675,14 @@ html.is-loaded .top-hero::before{
   letter-spacing: 0.8px;
   font-size: 13px;
   text-transform: uppercase;
-  color: rgba(11,31,51,0.85) !important; /* blue/navy label */
+  color: rgba(255,255,255,0.92) !important;
 }
 
 .top-contact-value{
   display: block;
   font-weight: 700;
   font-size: 16px;
-  color: #0b1f33 !important; /* blue/navy value */
+  color: #ffffff !important;
 }
 
 .top-contact-item:hover{
@@ -2704,7 +2704,7 @@ html.is-loaded .top-hero::before{
 }
 
 .phone-icon{
-  color: #0b1f33 !important; /* blue/navy phone icon */
+  color: #ffffff !important;
 }
 
 
