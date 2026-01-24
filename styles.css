@@ -3130,3 +3130,19 @@ html.is-loaded .top-hero::before{
   color: #ff6a00; /* FL Man orange */
 }
 
+.footer-brand-row{
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.footer-brand-row .footer-logo{
+  width: 90px;
+  height: auto;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.footer-brand-row .footer-text{
+  margin: 0;
+}
