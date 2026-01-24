@@ -2708,6 +2708,12 @@ html.is-loaded .top-hero::before{
   color: rgba(255,255,255,0.85);
   font-size: 15px;
   text-align: left;
+  color: #0b1f33; /* navy */
+}
+
+.biz-pan-title,
+.biz-pan-sub{
+  text-align: left;
 }
 
 
