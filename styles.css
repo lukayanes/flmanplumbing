@@ -2999,3 +2999,115 @@ html.is-loaded .top-hero::before{
     height: 64px;
   }
 }
+
+/* =========================
+   LAST CTA SECTION (IMAGE + ORANGE PANEL)
+========================= */
+.last-cta{
+  width: 100%;
+}
+
+.last-cta-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 520px;
+}
+
+.last-cta-photo{
+  background: url("./assets/last-cta-photo.jpg") center/cover no-repeat;
+  filter: grayscale(15%);
+}
+
+.last-cta-panel{
+  background: #ff6a00; /* FL Man orange */
+  padding: 70px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.last-cta-panel{
+  background: #0b1f33; /* navy */
+  padding: 70px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.last-cta-sub{
+  margin: 0 0 18px;
+  color: rgba(255,255,255,0.9);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.last-cta-line{
+  width: 44px;
+  height: 3px;
+  border-radius: 999px;
+  background: #ff6a00;
+  margin: 0 0 22px;
+}
+
+.last-cta-body{
+  margin: 0 0 26px;
+  color: rgba(255,255,255,0.92);
+  line-height: 1.7;
+  max-width: 520px;
+  font-size: 15px;
+}
+
+.last-cta-phone{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+.last-cta-phone:hover{
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer{
+  background: #071427; /* deep navy */
+  color: #ffffff;
+  padding: 70px 0 0;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 46px;
+  align-items: start;
+}
+
+.footer-logo{
+  width: 160px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.site-footer h3{
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-text{
+  margin: 0;
+  color: rgba
+
