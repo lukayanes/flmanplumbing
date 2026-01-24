@@ -3283,3 +3283,40 @@ html.is-loaded .top-hero::before{
   }
 }
 
+/* RIGHT PANEL = WHITE */
+.last-cta-panel{
+  background: #ffffff !important;
+}
+
+/* Headline navy */
+.last-cta-title{
+  color: #0b1f33 !important;
+}
+
+/* Only this line orange */
+.last-cta-title .cta-orange{
+  color: #ff6a00 !important;
+}
+
+/* Sub + body navy shades */
+.last-cta-sub{
+  color: rgba(11,31,51,0.75) !important;
+}
+
+.last-cta-body{
+  color: rgba(11,31,51,0.85) !important;
+}
+
+/* Orange accent line */
+.last-cta-line{
+  background: #ff6a00 !important;
+}
+
+/* Phone link navy -> orange hover */
+.last-cta-phone{
+  color: #0b1f33 !important;
+}
+
+.last-cta-phone:hover{
+  color: #ff6a00 !important;
+}
