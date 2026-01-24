@@ -3001,7 +3001,7 @@ html.is-loaded .top-hero::before{
 }
 
 /* =========================
-   LAST CTA SECTION (IMAGE + ORANGE PANEL)
+   LAST CTA SECTION (IMAGE + WHITE PANEL)
 ========================= */
 .last-cta{
   width: 100%;
@@ -3018,28 +3018,19 @@ html.is-loaded .top-hero::before{
   filter: grayscale(15%);
 }
 
+/* RIGHT PANEL = WHITE */
 .last-cta-panel{
-  background: #ffffff; /* white panel */
+  background: #ffffff;
   padding: 70px 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-
-.last-cta-panel{
-  background: #0b1f33; /* navy */
-  padding: 70px 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-
+/* Text styles */
 .last-cta-sub{
   margin: 0 0 18px;
-  color: rgba(255,255,255,0.9);
+  color: rgba(11,31,51,0.75);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -3054,32 +3045,9 @@ html.is-loaded .top-hero::before{
   margin: 0 0 22px;
 }
 
-.last-cta-body{
-  margin: 0 0 26px;
-  color: rgba(255,255,255,0.92);
-  line-height: 1.7;
-  max-width: 520px;
-  font-size: 15px;
-}
-
-.last-cta-phone{
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 20px;
-  text-decoration: none;
-  margin-top: 6px;
-}
-
-.last-cta-phone:hover{
-  text-decoration: underline;
-}
-
 .last-cta-panel h2{
   margin: 0 0 18px;
-  color: #0b1f33; /* navy */
+  color: #0b1f33;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -3087,18 +3055,9 @@ html.is-loaded .top-hero::before{
   font-size: clamp(22px, 2.2vw, 34px);
 }
 
-/* orange only for “NEED A LICENSED SARASOTA” */
+/* Orange only for the span */
 .last-cta-panel h2 .cta-orange{
-  color: #ff6a00 !important;
-}
-
-.last-cta-sub{
-  margin: 0 0 18px;
-  color: rgba(11,31,51,0.75); /* navy-ish */
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 12px;
+  color: #ff6a00;
 }
 
 .last-cta-body{
@@ -3109,19 +3068,11 @@ html.is-loaded .top-hero::before{
   font-size: 15px;
 }
 
-.last-cta-line{
-  width: 44px;
-  height: 3px;
-  border-radius: 999px;
-  background: #ff6a00; /* orange accent line */
-  margin: 0 0 22px;
-}
-
 .last-cta-phone{
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #0b1f33; /* navy */
+  color: #0b1f33;
   font-weight: 900;
   font-size: 20px;
   text-decoration: none;
@@ -3130,11 +3081,23 @@ html.is-loaded .top-hero::before{
 
 .last-cta-phone:hover{
   color: #ff6a00;
+  text-decoration: underline;
 }
 
+/* Mobile */
+@media (max-width: 900px){
+  .last-cta-grid{
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .last-cta-panel{
+    padding: 50px 22px;
+  }
+}
 
 /* =========================
-   FOOTER
+   FOOTER (CLEAN FIX)
 ========================= */
 .site-footer{
   background: #071427; /* deep navy */
@@ -3149,10 +3112,33 @@ html.is-loaded .top-hero::before{
   align-items: start;
 }
 
+/* BRAND ROW = logo LEFT of paragraph */
+.footer-brand{
+  min-width: 0;
+}
+
+.footer-brand-row{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-width: 0;
+}
+
 .footer-logo{
-  width: 160px;
+  width: 86px;
   height: auto;
-  margin-bottom: 16px;
+  flex: 0 0 86px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+
+.footer-text{
+  margin: 0;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+  font-size: 14px;
 }
 
 .site-footer h3{
@@ -3164,14 +3150,22 @@ html.is-loaded .top-hero::before{
   color: #ffffff;
 }
 
-.footer-text{
-  margin: 0;
-  color: rgba
+.site-footer a{
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
 
+.site-footer a:hover{
+  color: #ff6a00;
+  text-decoration: underline;
+}
+
+/* Copyright bar */
 .copyright-bar{
-  background: #050f1d; /* slightly darker than footer */
+  background: #050f1d;
   padding: 16px 0;
   text-align: center;
+  margin-top: 50px;
 }
 
 .copyright-bar p{
@@ -3183,204 +3177,21 @@ html.is-loaded .top-hero::before{
   font-weight: 700;
 }
 
-  .last-cta-panel .cta-orange{
-  color: #ff6a00; /* FL Man orange */
-}
-
-/* stop logo from blowing up / overflowing */
-.footer-brand{
-  overflow: hidden;
-}
-
-.footer-brand-row{
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-}
-
-.footer-brand-row .footer-logo{
-  width: 85px !important;
-  max-width: 85px !important;
-  height: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  flex: 0 0 85px !important;
-  display: block;
-}
-
-.footer-brand-row .footer-text{
-  margin: 0;
-  flex: 1;
-  min-width: 0; /* prevents flex overflow */
-}
-
-  .last-cta-panel h2 .cta-orange{
-  color: #ff6a00 !important; /* FL Man orange */
-}
-
-  @media (max-width: 700px){
-  .footer-brand-row{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-brand-row .footer-logo{
-    width: 140px;
-  }
-}
-
-
-  /* Force orange on the first line of the CTA headline */
-.last-cta-title .cta-orange{
-  color: #ff6a00 !important;
-}
-
-
-/* ===== FOOTER BRAND: logo left of text, no overflow ===== */
-.site-footer .footer-grid{
-  align-items: start;
-}
-
-.site-footer .footer-brand{
-  overflow: hidden;          /* prevents bleed outside column */
-  min-width: 0;
-}
-
-.site-footer .footer-brand-row{
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  min-width: 0;              /* prevents flex children overflow */
-}
-
-.site-footer .footer-brand-row .footer-logo{
-  width: 86px !important;
-  max-width: 86px !important;
-  height: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  display: block;
-  flex: 0 0 86px;            /* locks size so it can’t push upward */
-  object-fit: contain;
-}
-
-.site-footer .footer-brand-row .footer-text{
-  margin: 0;
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-/* Mobile: stack logo above paragraph */
+/* Mobile footer */
 @media (max-width: 700px){
-  .site-footer .footer-brand-row{
+  .footer-grid{
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .footer-brand-row{
     flex-direction: column;
     gap: 12px;
   }
-  .site-footer .footer-brand-row .footer-logo{
-    width: 150px !important;
-    max-width: 150px !important;
+
+  .footer-logo{
+    width: 150px;
     flex: 0 0 auto;
-  }
-}
-
-/* RIGHT PANEL = WHITE */
-.last-cta-panel{
-  background: #ffffff !important;
-}
-
-/* Headline navy */
-.last-cta-title{
-  color: #0b1f33 !important;
-}
-
-/* Only this line orange */
-.last-cta-title .cta-orange{
-  color: #ff6a00 !important;
-}
-
-/* Sub + body navy shades */
-.last-cta-sub{
-  color: rgba(11,31,51,0.75) !important;
-}
-
-.last-cta-body{
-  color: rgba(11,31,51,0.85) !important;
-}
-
-/* Orange accent line */
-.last-cta-line{
-  background: #ff6a00 !important;
-}
-
-/* Phone link navy -> orange hover */
-.last-cta-phone{
-  color: #0b1f33 !important;
-}
-
-.last-cta-phone:hover{
-  color: #ff6a00 !important;
-}
-
-  /* FORCE last CTA right side to be white no matter what */
-.last-cta{
-  background: transparent !important;
-}
-
-.last-cta-grid{
-  background: transparent !important;
-}
-
-.last-cta-panel{
-  background-color: #ffffff !important;
-  background-image: none !important;
-  color: #0b1f33 !important;
-}
-
-  /* ===== FORCE footer logo to sit LEFT of the paragraph (override everything) ===== */
-.site-footer .footer-brand-row{
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: flex-start !important;
-  gap: 16px !important;
-  min-width: 0 !important;
-}
-
-.site-footer .footer-brand-row .footer-logo{
-  /* reset any weird global image styles */
-  position: static !important;
-  float: none !important;
-  transform: none !important;
-  top: auto !important;
-  left: auto !important;
-
-  display: block !important;
-  width: 86px !important;
-  max-width: 86px !important;
-  height: auto !important;
-  max-height: 86px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  flex: 0 0 86px !important;
-  object-fit: contain !important;
-}
-
-.site-footer .footer-brand-row .footer-text{
-  margin: 0 !important;
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-}
-
-/* Mobile: stack */
-@media (max-width: 700px){
-  .site-footer .footer-brand-row{
-    flex-direction: column !important;
-  }
-  .site-footer .footer-brand-row .footer-logo{
-    width: 150px !important;
-    max-width: 150px !important;
-    max-height: none !important;
-    flex: 0 0 auto !important;
   }
 }
 
