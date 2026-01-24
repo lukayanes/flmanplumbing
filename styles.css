@@ -2638,6 +2638,7 @@ html.is-loaded .top-hero::before{
 /* TOP CONTACT BAR */
 .top-contact-bar{
   width: 50%;
+  align-items: center;
   background: #0B4EA2;
   color: #fff;
 }
