@@ -2774,3 +2774,24 @@ html.is-loaded .top-hero::before{
 .biz-pan-title{ max-width: 900px; }
 .biz-pan-sub{ max-width: 900px; }
 
+.biz-strip{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+}
+
+.biz-strip::-webkit-scrollbar{
+  display: none; /* Chrome/Safari */
+}
+
+.biz-track{
+  display: flex;
+  gap: 18px;
+  width: max-content;
+}
+
+.biz-card{
+  scroll-snap-align: start;
+}
+
