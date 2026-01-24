@@ -3170,7 +3170,7 @@ html.is-loaded .top-hero::before{
 
 .copyright-bar p{
   margin: 0;
-  color: rgba(255,255,255,0.7);
+  color: #0b1f33; /* navy text */
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -3195,6 +3195,4 @@ html.is-loaded .top-hero::before{
   }
 }
 
-.copyright-bar{
-  background: #0b1f33; /* navy */
-}
+
