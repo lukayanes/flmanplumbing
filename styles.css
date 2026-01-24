@@ -3216,3 +3216,85 @@ body{
 .copyright-bar p{
   color: #ffffff !important;
 }
+
+/* --- Dropdown container --- */
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Button looks like your normal links */
+.nav-dropbtn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+/* caret spacing */
+.nav-caret {
+  margin-left: 6px;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+/* dropdown menu */
+.nav-dropmenu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 0;
+  min-width: 260px;
+  z-index: 9999;
+
+  background: rgba(10, 18, 30, 0.98);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 10px;
+
+  box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: 180ms ease;
+}
+
+.nav-dropmenu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+
+  color: rgba(255,255,255,0.92);
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.nav-dropmenu a:hover,
+.nav-dropmenu a:focus {
+  background: rgba(255,255,255,0.08);
+  outline: none;
+}
+
+/* show on hover (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .nav-dropdown:hover .nav-dropmenu,
+  .nav-dropdown:focus-within .nav-dropmenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+/* JS-controlled open (mobile + click open) */
+.nav-dropdown.is-open .nav-dropmenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
