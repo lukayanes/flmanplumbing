@@ -2513,6 +2513,25 @@ html.is-loaded .top-hero::before{
   max-width: 22ch;
 }
 
+.biz-overlay h3{
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+.biz-overlay p{
+  font-weight: 700;
+  color: rgba(255,255,255,0.92);
+}
+
+.biz-overlay{
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.82),
+    rgba(0,0,0,0.45)
+  );
+}
+
+
 /* Make the strip snap one tile at a time */
 .biz-strip{
   overflow-x: auto;
