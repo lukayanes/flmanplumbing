@@ -3537,3 +3537,40 @@ body{
   padding: 0 18px;
 }
 
+/* =========================================
+   NAV HARD FIX: lock logo to true center
+   (prevents drift when Services dropdown is wider)
+========================================= */
+
+.top-nav-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  align-items: center;
+  gap: 18px;
+}
+
+/* left group hugs the logo from the left */
+.nav-left{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 26px;
+}
+
+/* right group hugs the logo from the right */
+.nav-right{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 26px;
+}
+
+/* keep dropdown behaving like a normal link inside the left group */
+.nav-dropdown{ display: inline-flex; align-items: center; }
+
+/* MOBILE stays stacked (your existing @media max-width:900px rules can keep winning) */
+
