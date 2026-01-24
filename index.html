@@ -585,6 +585,44 @@ strip.addEventListener("touchend", () => {
 })();
 </script>
 
+  <script>
+(() => {
+  const dd = document.querySelector(".nav-dropdown");
+  if (!dd) return;
+
+  const btn = dd.querySelector(".nav-dropbtn");
+  const menu = dd.querySelector(".nav-dropmenu");
+
+  const close = () => {
+    dd.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  const toggle = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const open = dd.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  };
+
+  // Toggle on click (mobile + desktop)
+  btn.addEventListener("click", toggle);
+
+  // CRITICAL: don't let menu clicks bubble to the outside-click closer
+  menu.addEventListener("pointerdown", (e) => e.stopPropagation());
+
+  // Close if you click outside
+  document.addEventListener("pointerdown", (e) => {
+    if (!dd.contains(e.target)) close();
+  });
+
+  // Close on Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+})();
+</script>
+
 
 </body>
 </html>
