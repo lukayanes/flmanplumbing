@@ -3130,6 +3130,11 @@ html.is-loaded .top-hero::before{
   color: #ff6a00; /* FL Man orange */
 }
 
+/* stop logo from blowing up / overflowing */
+.footer-brand{
+  overflow: hidden;
+}
+
 .footer-brand-row{
   display: flex;
   align-items: flex-start;
@@ -3137,14 +3142,19 @@ html.is-loaded .top-hero::before{
 }
 
 .footer-brand-row .footer-logo{
-  width: 90px;
-  height: auto;
-  margin: 0;
-  flex: 0 0 auto;
+  width: 85px !important;
+  max-width: 85px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 85px !important;
+  display: block;
 }
 
 .footer-brand-row .footer-text{
   margin: 0;
+  flex: 1;
+  min-width: 0; /* prevents flex overflow */
 }
 
   .last-cta-panel h2 .cta-orange{
