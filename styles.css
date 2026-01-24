@@ -3178,3 +3178,51 @@ html.is-loaded .top-hero::before{
   color: #ff6a00 !important;
 }
 
+
+/* ===== FOOTER BRAND: logo left of text, no overflow ===== */
+.site-footer .footer-grid{
+  align-items: start;
+}
+
+.site-footer .footer-brand{
+  overflow: hidden;          /* prevents bleed outside column */
+  min-width: 0;
+}
+
+.site-footer .footer-brand-row{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-width: 0;              /* prevents flex children overflow */
+}
+
+.site-footer .footer-brand-row .footer-logo{
+  width: 86px !important;
+  max-width: 86px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+  flex: 0 0 86px;            /* locks size so it can’t push upward */
+  object-fit: contain;
+}
+
+.site-footer .footer-brand-row .footer-text{
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Mobile: stack logo above paragraph */
+@media (max-width: 700px){
+  .site-footer .footer-brand-row{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .site-footer .footer-brand-row .footer-logo{
+    width: 150px !important;
+    max-width: 150px !important;
+    flex: 0 0 auto;
+  }
+}
+
