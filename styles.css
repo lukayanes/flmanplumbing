@@ -3195,3 +3195,6 @@ html.is-loaded .top-hero::before{
   }
 }
 
+.copyright-bar{
+  background: #0b1f33; /* navy */
+}
