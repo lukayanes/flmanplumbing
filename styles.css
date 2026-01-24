@@ -3172,3 +3172,9 @@ html.is-loaded .top-hero::before{
   }
 }
 
+
+  /* Force orange on the first line of the CTA headline */
+.last-cta-title .cta-orange{
+  color: #ff6a00 !important;
+}
+
