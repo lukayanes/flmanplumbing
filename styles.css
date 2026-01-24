@@ -3522,4 +3522,10 @@ body{
   justify-content: center;
 }
 
+.top-nav,
+.top-nav-inner {
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
 
