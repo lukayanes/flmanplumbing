@@ -3366,3 +3366,7 @@ body{
   pointer-events: auto;
 }
 
+.top-nav { pointer-events: auto !important; }
+.hero-overlay { pointer-events: none; } /* only if your overlay is blocking the nav */
+.hero-overlay * { pointer-events: auto; } /* lets form/buttons still work */
+
