@@ -2704,8 +2704,8 @@ html.is-loaded .top-hero::before{
   padding-left: 22px;   /* space from divider */
 }
 
-.top-contact-icon{
-  color: #f7b500; /* Florida Man orange */
+.phone-icon{
+  color: #f7b500;
 }
 
 
