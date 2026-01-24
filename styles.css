@@ -2639,7 +2639,7 @@ html.is-loaded .top-hero::before{
   width: 100%;
   margin: 0 auto;          /* centers it */
   overflow: hidden;        /* optional */
-  background: #0B4EA2;
+  background: #ff6a00 !important;  /* orange */
 }
 
 .top-contact-inner{
@@ -2655,17 +2655,18 @@ html.is-loaded .top-hero::before{
   gap: 14px;
   padding: 12px 18px;
   text-decoration: none;
-  color: #fff;
+  color: #0b1f33 !important; /* blue/navy words */
 }
 
 .top-contact-item:first-child{
-  border-right: 1px solid rgba(255,255,255,0.18);
+  border-right: 1px solid rgba(11,31,51,0.25) !important; /* blue/navy divider */
 }
 
 .top-contact-icon{
   font-size: 22px;
   line-height: 1;
   opacity: 0.95;
+  color: #0b1f33 !important; /* blue/navy icon */
 }
 
 .top-contact-label{
@@ -2674,14 +2675,14 @@ html.is-loaded .top-hero::before{
   letter-spacing: 0.8px;
   font-size: 13px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.92);
+  color: rgba(11,31,51,0.85) !important; /* blue/navy label */
 }
 
 .top-contact-value{
   display: block;
   font-weight: 700;
   font-size: 16px;
-  color: #f7b500; /* Florida Man yellow */
+  color: #0b1f33 !important; /* blue/navy value */
 }
 
 .top-contact-item:hover{
@@ -2703,8 +2704,9 @@ html.is-loaded .top-hero::before{
 }
 
 .phone-icon{
-  color: #f7b500;
+  color: #0b1f33 !important; /* blue/navy phone icon */
 }
+
 
 
 
