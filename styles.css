@@ -2037,7 +2037,6 @@ html.is-loaded .top-hero::before{
 .hero-form-card{
   width: min(420px, 100%);
   padding: 22px 20px;
-  border-radius: 18px;
 
   background: rgba(255,255,255,0.10);
   border: 1px solid rgba(255,255,255,0.22);
@@ -2737,4 +2736,27 @@ html.is-loaded .top-hero::before{
   text-align: left;
 }
 
+
+/* FIX: keep inputs inside the form card */
+.hero-form-card,
+.quote-form,
+.quote-form *{
+  box-sizing: border-box;
+}
+
+.quote-form input,
+.quote-form textarea,
+.quote-form button{
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.hero-form-card{
+  overflow: hidden;
+}
+
+.quote-form{
+  min-width: 0;
+}
 
