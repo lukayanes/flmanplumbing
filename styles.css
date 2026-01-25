@@ -3407,3 +3407,6 @@ body{
   }
 }
 
+@media (min-width: 901px){
+  .top-nav, .top-nav-inner{ transform:none !important; }
+}
