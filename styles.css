@@ -24,12 +24,11 @@
 
 /* Nav wrapper */
 .top-nav{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  padding: 26px 24px;
+  /* IMPORTANT: keep nav UNDER the top-contact-bar (no overlap) */
+  position: relative;
+  z-index: 9999;
+  padding: 18px 24px;
+  overflow: visible;
 }
 
 /* 3-column nav: left links, center , right links/icons */
@@ -3337,5 +3336,41 @@ body{
   .nav-right a,
   .nav-dropbtn{
     font-size: 20px; /* was 22px in base nav rules */
+  }
+}
+
+
+/* =========================================================
+   NAV FINAL LOCK (prevents older mobile/hero patches from
+   forcing the nav to absolute and causing overlap/drift)
+   - nav stays under the top-contact-bar on ALL pages
+========================================================= */
+.top-nav{
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+@media (min-width: 901px){
+  .top-nav-inner{
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr !important;
+    align-items: center !important;
+    gap: 18px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  .nav-left{
+    display:flex !important;
+    justify-content:flex-end !important;
+    align-items:center !important;
+  }
+  .nav-right{
+    display:flex !important;
+    justify-content:flex-start !important;
+    align-items:center !important;
   }
 }
