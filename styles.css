@@ -3786,3 +3786,67 @@ header,
     flex-wrap: wrap;
   }
 }
+
+/* ================================
+   NAV FIX (no scroll, clear, tighter spacing, Services matches)
+   ADD AT VERY BOTTOM
+================================ */
+
+/* 1) Pin nav to top, never moves */
+.top-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  /* keep it clear/transparent */
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 1b) Prevent page content from hiding under the fixed nav.
+   Adjust 72px if your nav is taller/shorter. */
+body{
+  padding-top: 72px;
+}
+
+/* 2) Keep your original layout (likely 1fr auto 1fr), just tighten it */
+.top-nav-inner{
+  width: min(900px, 92%) !important;   /* narrower container pulls items toward logo */
+  margin: 0 auto !important;
+  column-gap: 14px !important;         /* gap between left/logo/right columns (grid) */
+}
+
+/* Tighten spacing between items inside left/right groups */
+.nav-left,
+.nav-right{
+  gap: 12px !important;
+}
+
+/* 3) Make Services look identical to other nav links */
+.nav-dropbtn.nav-linklike{
+  font: inherit !important;
+  color: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+  font-weight: inherit !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+/* Make hover feel like links (won't change colors, just uses your current styling) */
+.top-nav a:hover,
+.nav-dropbtn.nav-linklike:hover{
+  opacity: 0.9;
+}
+
+/* Optional: keep logo from pushing things apart */
+.nav-logo{
+  margin: 0 6px !important;
+}
