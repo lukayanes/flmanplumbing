@@ -3300,9 +3300,7 @@ body{
   pointer-events: auto;
 }
 
-/* IMPORTANT: prevent dropdown from being clipped by nav containers */
-.top-nav, .top-nav-inner { overflow: visible; }
-.top-nav { position: relative; z-index: 9999; }
+
 
 /* Make the Services button match the other nav links */
 .nav-linklike {
@@ -3373,7 +3371,7 @@ body{
 
 /* required so dropdown isn't clipped */
 .top-nav, .top-nav-inner { overflow: visible; }
-.top-nav { position: relative; z-index: 9999; }
+.top-nav { z-index: 9999; } /* keep only z-index, DO NOT change position */
 
 .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
 
@@ -3888,3 +3886,16 @@ body{
   padding-top: 0 !important;
 }
 
+/* ===== NAV: FORCE STICKY/FIXED (final override) ===== */
+.top-nav{
+  position: fixed !important;
+  top: 56px !important;     /* keep your existing offset under orange bar */
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+  z-index: 99999 !important;
+}
+
+.top-nav-inner{
+  overflow: visible !important;
+}
