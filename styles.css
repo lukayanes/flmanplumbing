@@ -3599,3 +3599,74 @@ body{
 .top-hero{
   display: block !important;
 }
+
+/* ================================
+   NAV HARD-FIX (centers across full page, not hero column)
+   Put this at the VERY BOTTOM of your CSS
+================================ */
+
+/* Ensure header/nav wrapper is not constrained by hero grid/columns */
+header,
+.site-header,
+.navwrap {
+  width: 100%;
+}
+
+/* Make the nav container full-width and center its contents */
+.navwrap .nav-inner,
+.navwrap .container,
+.navwrap .nav-inner.container {
+  width: min(1200px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: center !important;
+  position: relative;
+}
+
+/* If your header also has a logo/brand + nav, keep nav centered regardless */
+.navwrap .nav {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: 22px;
+  width: fit-content;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+}
+
+/* Kill the common cause: nav inheriting grid column constraints */
+.hero-grid .nav,
+.hero-grid .navwrap,
+.hero-grid .nav-inner,
+.hero-content .nav,
+.hero-content .navwrap,
+.hero-content .nav-inner {
+  grid-column: 1 / -1 !important;
+  justify-self: center !important;
+}
+
+/* Absolute-center fallback (only kicks in if something still forces a left column) */
+@supports (transform: translateX(-50%)) {
+  .navwrap .nav {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile: keep it centered and not squished */
+@media (max-width: 900px) {
+  .navwrap .nav-inner,
+  .navwrap .container,
+  .navwrap .nav-inner.container {
+    justify-content: center !important;
+  }
+  .navwrap .nav {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
