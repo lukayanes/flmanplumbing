@@ -3699,17 +3699,26 @@ header,
   align-items: center;
 }
 
-/* STEP 1: Keep the TOP NAV pinned (clear/transparent) */
+/* STEP 1: Pin the orange contact bar + nav (clear nav) */
+.top-contact-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
 .top-nav{
   position: fixed;
-  top: 60px;          /* sits under the orange bar — adjust if needed */
+  top: 56px;              /* contact bar height */
   left: 0;
   right: 0;
   z-index: 9999;
   background: transparent !important;
 }
 
-/* Prevent content from sliding under the fixed nav */
+/* Push the page down so content starts below both bars */
 body{
-  padding-top: 140px; /* 60px contact bar + ~80px nav (adjust if needed) */
+  padding-top: 130px;     /* 56px bar + ~74px nav */
 }
+
