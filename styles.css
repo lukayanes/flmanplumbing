@@ -3856,4 +3856,35 @@ html, body{
   background: transparent !important;
   transform: none !important;
 }
+/* ===============================
+   FIX: STICKY / FIXED NAV (NO SCROLLING)
+   =============================== */
+
+/* If you want the orange top bar to stay too, keep this ON */
+.top-contact-bar{
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 10000 !important;
+}
+
+/* Pin the main nav under the top bar */
+.top-nav{
+  position: fixed !important;
+  top: 56px !important;         /* height of the orange bar */
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* Prevent the fixed header from covering the top of the page content */
+body{
+  padding-top: 56px !important; /* accounts for the fixed orange bar */
+}
+
+/* Optional: give the hero a tiny buffer so nothing gets hidden */
+.top-hero{
+  padding-top: 0 !important;
+}
 
