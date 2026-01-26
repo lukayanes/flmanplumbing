@@ -351,6 +351,18 @@ html.is-loaded .top-hero::before{
   padding: 0 18px 60px;
 }
 
+.top-hero{
+  background:
+    linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+    url("./assets/flmanhero2.png") center top/cover no-repeat;
+}
+
+.hero-overlay{
+  padding-top: 90px;
+}
+
+
+
 .hero-content{
   width: min(1200px, 92%);
 }
