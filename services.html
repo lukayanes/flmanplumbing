@@ -6,167 +6,625 @@
   <title>Services | Florida Man Plumbing</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
 
-  <!-- TOP CONTACT BAR -->
-  <div class="top-contact-bar">
-    <div class="top-contact-inner">
-      <a class="top-contact-item" href="mailto:info@floridamanplumbing.com">
-        <span class="top-contact-icon">✉️</span>
-        <span>
-          <span class="top-contact-label">EMAIL US TODAY</span>
-          <span class="top-contact-value">info@floridamanplumbing.com</span>
-        </span>
+<!-- TOP CONTACT BAR (same as index) -->
+<div class="top-contact-bar">
+  <div class="top-contact-inner">
+    <a class="top-contact-item" href="mailto:info@floridamanplumbing.com">
+      <span class="top-contact-icon">✉️</span>
+      <span>
+        <span class="top-contact-label">EMAIL US TODAY</span>
+        <span class="top-contact-value">info@floridamanplumbing.com</span>
+      </span>
+    </a>
+
+    <a class="top-contact-item" href="tel:19415250835">
+      <span class="top-contact-icon">📞</span>
+      <span>
+        <span class="top-contact-label">CALL US NOW</span>
+        <span class="top-contact-value">(941) 525-0835</span>
+      </span>
+    </a>
+  </div>
+</div>
+
+<!-- NAV (exactly like index) -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+      <a href="./about.html">About</a>
+
+      <!-- Services Dropdown -->
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn nav-linklike"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false">
+          Services <span class="nav-caret" aria-hidden="true">▾</span>
+        </button>
+
+        <div class="nav-dropmenu" role="menu" aria-label="Services submenu">
+          <a role="menuitem" href="./services.html">All Services</a>
+          <a role="menuitem" href="./services.html#commercial-plumbing">Commercial Plumbing</a>
+          <a role="menuitem" href="./services.html#hydro-jetting">Hydro Jetting</a>
+          <a role="menuitem" href="./services.html#residential-plumbing">Residential Plumbing</a>
+          <a role="menuitem" href="./services.html#bathroom-plumbing">Bathroom Plumbing</a>
+          <a role="menuitem" href="./services.html#drain-cleaning">Drain Cleaning</a>
+          <a role="menuitem" href="./services.html#faucet-leak-repairs">Faucet &amp; Leak Repairs</a>
+          <a role="menuitem" href="./services.html#gas-line-services">Gas Line Services</a>
+          <a role="menuitem" href="./services.html#water-filtration">Water Filtration</a>
+          <a role="menuitem" href="./services.html#water-heater-repair">Water Heater Repair</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER LOGO -->
+    <a class="nav-logo" href="./index.html" aria-label="Home">
+      <img src="assets/logo.png" alt="Florida Man Plumbing" />
+    </a>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+      <a href="./reviews.html">Reviews</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- SERVICES HERO (simple + clean, matches your dark section styling) -->
+<section class="about-split" style="padding-top: calc(var(--contact-bar-h) + 140px);">
+  <div class="container">
+    <p class="about-kicker">
+      <a class="about-link" href="./index.html">
+        HOME <span class="about-arrow">›</span>
       </a>
-      <a class="top-contact-item" href="tel:19415250835">
-        <span class="top-contact-icon">📞</span>
-        <span>
-          <span class="top-contact-label">CALL US NOW</span>
-          <span class="top-contact-value">(941) 525-0835</span>
-        </span>
+    </p>
+
+    <h1 class="about-title" style="margin-top: 8px;">
+      PLUMBING SERVICES IN SARASOTA, FL
+    </h1>
+
+    <div class="about-underline"></div>
+
+    <p class="about-body" style="max-width: 900px;">
+      Whether you need a quick repair, a full install, or help with a plumbing emergency,
+      Florida Man Plumbing delivers fast response times and honest work. Browse our services below
+      and request a free quote anytime.
+    </p>
+
+    <div style="margin-top:22px;">
+      <a class="last-cta-phone" href="tel:19415250835">☎ +1 (941) 525-0835</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES CAROUSEL (same look as index, but links to sections on this page) -->
+<section class="biz-pan" id="all-services">
+  <div class="container">
+
+    <p class="biz-pan-kicker">
+      <a class="services-link" href="#all-services">
+        ALL SERVICES <span class="about-arrow">›</span>
+      </a>
+    </p>
+
+    <h2 class="biz-pan-title">Explore Our Residential &amp; Commercial Plumbing Services</h2>
+    <div class="about-underline"></div>
+
+    <p class="biz-pan-sub">
+      Click any service to jump to details, common issues we handle, and what to expect when you call.
+      If you’re not sure what you need, give us a call and we’ll guide you.
+    </p>
+
+  </div>
+
+  <div class="biz-wrap">
+    <button class="biz-arrow left" type="button" aria-label="Scroll left">‹</button>
+
+    <div class="biz-strip" aria-label="Services carousel">
+      <div class="biz-track" id="bizTrack">
+
+        <a class="biz-card" href="#commercial-plumbing" style="--bg:url('./assets/commercial-plumbing.jpg')">
+          <div class="biz-overlay">
+            <h3>Commercial Plumbing</h3>
+            <p>Repairs, installs, and maintenance for Sarasota businesses.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#hydro-jetting" style="--bg:url('./assets/hydro-jetting.jpg')">
+          <div class="biz-overlay">
+            <h3>Hydro Jetting</h3>
+            <p>High-pressure cleaning to clear tough clogs and buildup.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#residential-plumbing" style="--bg:url('./assets/residential-plumbing.jpg')">
+          <div class="biz-overlay">
+            <h3>Residential Plumbing</h3>
+            <p>Repairs and installs to keep your home running smoothly.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#bathroom-plumbing" style="--bg:url('./assets/bathroom-plumbing.jpeg')">
+          <div class="biz-overlay">
+            <h3>Bathroom Plumbing</h3>
+            <p>Toilets, faucets, showers, and fixture upgrades.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#drain-cleaning" style="--bg:url('./assets/drain-cleaning.jpg')">
+          <div class="biz-overlay">
+            <h3>Drain Cleaning</h3>
+            <p>Fast clearing for sinks, tubs, showers, and main lines.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#faucet-leak-repairs" style="--bg:url('./assets/faucet-leak-repairs.jpg')">
+          <div class="biz-overlay">
+            <h3>Faucet &amp; Leak Repairs</h3>
+            <p>Stop wasting water and prevent damage fast.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#gas-line-services" style="--bg:url('./assets/gas-line-services.jpg')">
+          <div class="biz-overlay">
+            <h3>Gas Line Services</h3>
+            <p>Safe installs and repairs done the right way.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#water-filtration" style="--bg:url('./assets/water-filtration.jpg')">
+          <div class="biz-overlay">
+            <h3>Water Filtration</h3>
+            <p>Cleaner, better tasting water for your home.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="#water-heater-repair" style="--bg:url('./assets/water-heater-repair.jpg')">
+          <div class="biz-overlay">
+            <h3>Water Heater Repair</h3>
+            <p>Restore hot water quickly — repair or replacement.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <button class="biz-arrow right" type="button" aria-label="Scroll right">›</button>
+  </div>
+</section>
+
+<!-- SERVICE SECTIONS (anchors match dropdown) -->
+<section class="about-split" id="commercial-plumbing">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker">
+        <span class="about-link">COMMERCIAL PLUMBING</span>
+      </p>
+
+      <h2 class="about-title">Commercial Plumbing Services for Sarasota Businesses</h2>
+      <div class="about-underline"></div>
+
+      <p class="about-body">
+        Keep your business running with dependable plumbing repairs, installs, and maintenance.
+        We work with offices, retail, restaurants, and property managers.
+      </p>
+
+      <p class="about-body" style="margin-top:14px;">
+        <strong>Common calls:</strong> restroom issues, clogged drains, water heater problems,
+        leaks, fixture replacements, and proactive maintenance.
+      </p>
+
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/commercial-plumbing.jpg" alt="Commercial plumbing services" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="hydro-jetting">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">HYDRO JETTING</span></p>
+      <h2 class="about-title">Hydro Jetting to Clear Tough Clogs &amp; Buildup</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        Hydro jetting uses high-pressure water to cut through grease, sludge, roots, and heavy buildup.
+        It’s one of the best ways to restore full flow and prevent repeat clogs.
+      </p>
+      <p class="about-body" style="margin-top:14px;">
+        <strong>Ideal for:</strong> recurring clogs, slow drains, grease buildup, and commercial lines.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/hydro-jetting.jpg" alt="Hydro jetting service" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="residential-plumbing">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">RESIDENTIAL PLUMBING</span></p>
+      <h2 class="about-title">Residential Plumbing Repairs &amp; Installations</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        From small repairs to bigger installs, we help homeowners keep everything working properly —
+        with clear communication and honest recommendations.
+      </p>
+      <p class="about-body" style="margin-top:14px;">
+        <strong>Common calls:</strong> leaks, clogs, low pressure, fixture installs, shutoff valves, and more.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/residential-plumbing.jpg" alt="Residential plumbing services" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="bathroom-plumbing">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">BATHROOM PLUMBING</span></p>
+      <h2 class="about-title">Bathroom Plumbing: Toilets, Faucets, Showers &amp; More</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        We repair and install bathroom fixtures and solve problems like clogs, running toilets,
+        dripping faucets, and low water pressure.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/bathroom-plumbing.jpeg" alt="Bathroom plumbing services" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="drain-cleaning">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">DRAIN CLEANING</span></p>
+      <h2 class="about-title">Drain Cleaning for Sinks, Tubs, Showers &amp; Main Lines</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        Don’t wait for a slow drain to become a backup. We clear clogs fast and help prevent the issue
+        from coming right back.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/drain-cleaning.jpg" alt="Drain cleaning service" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="faucet-leak-repairs">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">FAUCET &amp; LEAK REPAIRS</span></p>
+      <h2 class="about-title">Faucet, Pipe, and Leak Repairs</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        Leaks waste water and can cause serious damage. We locate the issue, fix it cleanly,
+        and make sure you’re protected going forward.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/faucet-leak-repairs.jpg" alt="Leak repair service" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="gas-line-services">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">GAS LINE SERVICES</span></p>
+      <h2 class="about-title">Safe Gas Line Installation &amp; Repair</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        If you need a new gas line installed or an existing line repaired, we focus on safety first —
+        proper materials, correct fittings, and clean workmanship.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/gas-line-services.jpg" alt="Gas line services" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="water-filtration">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">WATER FILTRATION</span></p>
+      <h2 class="about-title">Water Filtration &amp; Treatment Solutions</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        Enjoy cleaner, healthier water with filtration and treatment systems that reduce impurities
+        and improve water quality for drinking, cooking, and cleaning.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/water-filtration.jpg" alt="Water filtration service" />
+    </div>
+  </div>
+</section>
+
+<section class="about-split" id="water-heater-repair">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">WATER HEATER REPAIR</span></p>
+      <h2 class="about-title">Water Heater Repair &amp; Replacement</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">
+        No hot water? Strange noises? Leaks? We diagnose quickly and recommend the best fix —
+        whether that’s a repair or a replacement.
+      </p>
+      <div style="margin-top:18px;">
+        <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="about-split-image">
+      <img src="./assets/water-heater-repair.jpg" alt="Water heater repair service" />
+    </div>
+  </div>
+</section>
+
+<!-- LAST CTA SECTION (same as index) -->
+<section class="last-cta">
+  <div class="last-cta-grid">
+    <div class="last-cta-photo" aria-hidden="true"></div>
+
+    <div class="last-cta-panel">
+      <h2 class="last-cta-title">
+        <span class="cta-orange">NEED A LICENSED SARASOTA PLUMBER?</span><br>
+        WE’RE HERE FOR YOU!
+     </h2>
+
+      <p class="last-cta-sub">
+        24/7 EMERGENCY PLUMBING SERVICE AVAILABLE.
+      </p>
+
+      <div class="last-cta-line"></div>
+
+      <p class="last-cta-body">
+        No matter when plumbing problems strike, Florida Man Plumbing is just a call away.
+        With our 24/7 emergency service, we’re ready to help day or night.
+        Don’t wait—get fast, reliable service from the plumber Sarasota trusts.
+      </p>
+
+      <a class="last-cta-phone" href="tel:19415250835">
+        ☎ +1 (941) 525-0835
       </a>
     </div>
   </div>
+</section>
 
-  <!-- NAV -->
-  <header class="top-nav">
-    <div class="top-nav-inner">
-      <div class="nav-left">
-        <a href="./about.html">About</a>
-        <a href="./services.html">Services</a>
-        <div class="nav-dropdown">
-          <button class="nav-dropbtn" type="button">More <span class="nav-caret">▾</span></button>
-          <div class="nav-dropmenu" aria-label="More links">
-            <a href="./reviews.html">Reviews</a>
-            <a href="./contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
+<!-- FOOTER (same as index) -->
+<footer class="site-footer">
+  <div class="container footer-grid">
 
-      <a class="nav-logo" href="./index.html" aria-label="Florida Man Plumbing Home">
-        <img src="./assets/logo.png" alt="Florida Man Plumbing Logo">
-      </a>
-
-      <div class="nav-right">
-        <a href="./reviews.html">Reviews</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- SIMPLE HERO (no background image, uses your existing look) -->
-  <section class="about-split" style="padding-top: calc(var(--contact-bar-h) + 140px);">
-    <div class="container">
-      <p class="about-kicker"><a class="about-link" href="./index.html">Home</a> <span style="color:rgba(255,255,255,0.6);">/</span> <span style="color:#fff;">Services</span></p>
-      <h1 class="about-title">Plumbing Services in Sarasota</h1>
-      <p class="about-body" style="max-width: 900px;">
-        From emergency calls to full installs, Florida Man Plumbing delivers fast response times and honest work.
-        Choose a service below to learn more.
-      </p>
-      <div class="about-underline" style="margin-top:18px;"></div>
-
-      <!-- SERVICE GRID (re-uses your review card styling so it matches) -->
-      <div class="review-grid" style="margin-top:28px;">
-        <a class="review" href="./service-emergency-plumbing.html">
-          <h4><strong>24/7 Emergency Plumbing</strong><br>Fast response when you need it most.</h4>
-          <p>Learn More →</p>
-        </a>
-
-        <a class="review" href="./service-drain-cleaning.html">
-          <h4><strong>Drain Cleaning</strong><br>Clogs cleared quickly and safely.</h4>
-          <p>Learn More →</p>
-        </a>
-
-        <a class="review" href="./service-water-heaters.html">
-          <h4><strong>Water Heaters</strong><br>Repair, replace, and install.</h4>
-          <p>Learn More →</p>
-        </a>
-
-        <a class="review" href="./service-leak-detection.html">
-          <h4><strong>Leak Detection</strong><br>Find leaks before they get expensive.</h4>
-          <p>Learn More →</p>
-        </a>
-
-        <a class="review" href="./service-sewer-line.html">
-          <h4><strong>Sewer Line Services</strong><br>Inspections, repairs, replacements.</h4>
-          <p>Learn More →</p>
-        </a>
-
-        <a class="review" href="./service-fixture-install.html">
-          <h4><strong>Fixture Install & Repair</strong><br>Toilets, faucets, disposals, and more.</h4>
-          <p>Learn More →</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- LAST CTA -->
-  <section class="last-cta">
-    <div class="last-cta-grid">
-      <div class="last-cta-photo" aria-hidden="true"></div>
-      <div class="last-cta-panel">
-        <h2><span class="cta-orange">Need a licensed Sarasota</span><br>plumber? We’re here for you!</h2>
-        <p class="last-cta-sub">Fast response • Honest work</p>
-        <div class="last-cta-line"></div>
-        <p class="last-cta-body">
-          Call now and we’ll help you get it handled. Emergency service available.
+    <!-- LEFT -->
+    <div class="footer-col footer-brand">
+      <div class="footer-brand-row">
+        <img class="footer-logo" src="./assets/logo.png" alt="Florida Man Plumbing Logo" />
+        <p class="footer-text">
+          Florida Man Plumbing is a local plumbing company in Sarasota, Florida.
+          We offer residential and commercial plumbing services, including 24/7 emergency plumbing.
+          We’re proud to serve the community with fast response times and honest work—because your plumbing deserves the best.
         </p>
-        <a class="last-cta-phone" href="tel:19415250835">📞 (941) 525-0835</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col footer-brand">
-        <div class="footer-brand-row">
-          <img class="footer-logo" src="./assets/logo.png" alt="Florida Man Plumbing Logo" />
-          <p class="footer-text">
-            Florida Man Plumbing is a local plumbing company in Sarasota, Florida.
-            We offer residential and commercial plumbing services, including 24/7 emergency plumbing.
-            We’re proud to serve the community with fast response times and honest work.
-          </p>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h3>Company</h3>
-        <p><a href="./about.html">About</a></p>
-        <p><a href="./services.html">Services</a></p>
-        <p><a href="./reviews.html">Reviews</a></p>
-        <p><a href="./contact.html">Contact</a></p>
-      </div>
-
-      <div class="footer-col">
-        <h3>Contact</h3>
-        <p><a href="tel:19415250835">(941) 525-0835</a></p>
-        <p><a href="mailto:info@floridamanplumbing.com">info@floridamanplumbing.com</a></p>
       </div>
     </div>
 
-    <div class="copyright-bar">
-      <p>© <span id="year"></span> Florida Man Plumbing. All Rights Reserved.</p>
+    <!-- MIDDLE -->
+    <div class="footer-col">
+      <h3>CONTACT INFO</h3>
+      <p class="footer-text">
+        Sarasota, FL <br />
+        <a href="mailto:info@floridamanplumbing.com">info@floridamanplumbing.com</a><br />
+        <a href="tel:19415250835">+1 (941) 525-0835 </a>
+      </p>
     </div>
-  </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h3>EMERGENCY PLUMBING</h3>
+      <p class="footer-text">
+        We understand that failed plumbing can be an emergency.
+        That’s why our team is here 24/7 to help assist you in the event you have a plumbing failure.
+        Don’t hesitate to call.
+      </p>
+    </div>
 
-  <script>
-    // dropdown click-open support
-    (function(){
-      const dd = document.querySelector(".nav-dropdown");
-      const btn = document.querySelector(".nav-dropbtn");
-      if(!dd || !btn) return;
-      btn.addEventListener("click", () => dd.classList.toggle("is-open"));
-      document.addEventListener("click", (e) => {
-        if(!dd.contains(e.target)) dd.classList.remove("is-open");
-      });
-    })();
-  </script>
+</footer>
+
+<section class="copyright-bar">
+  <div class="container">
+    <p>© <span id="year"></span> Florida Man Plumbing. All Rights Reserved.</p>
+  </div>
+</section>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- Page-load animation trigger -->
+<script>
+  requestAnimationFrame(() => {
+    document.documentElement.classList.add("is-loaded");
+  });
+</script>
+
+<!-- Carousel auto-scroll (same as index) -->
+<script>
+(() => {
+  const strip = document.querySelector(".biz-strip");
+  const track = document.getElementById("bizTrack");
+  if (!strip || !track) return;
+
+  let intervalId = null;
+  let paused = false;
+  let userInteracting = false;
+
+  const STEP_DELAY = 3000;
+
+  const getStep = () => {
+    const firstCard = track.querySelector(".biz-card");
+    if (!firstCard) return 250;
+
+    const cardStyles = window.getComputedStyle(firstCard);
+    const trackStyles = window.getComputedStyle(track);
+
+    const gap = parseFloat(trackStyles.gap || "0");
+    const cardWidth = firstCard.getBoundingClientRect().width;
+
+    return cardWidth + gap;
+  };
+
+  const next = () => {
+    if (paused || userInteracting) return;
+
+    const step = getStep();
+    const maxScroll = strip.scrollWidth - strip.clientWidth;
+
+    if (strip.scrollLeft >= maxScroll - 5) {
+      strip.scrollTo({ left: 0, behavior: "smooth" });
+      return;
+    }
+
+    strip.scrollBy({ left: step, behavior: "smooth" });
+  };
+
+  const start = () => {
+    if (intervalId) return;
+    intervalId = setInterval(next, STEP_DELAY);
+  };
+
+  let scrollTimeout = null;
+
+  strip.addEventListener("mouseenter", () => paused = true);
+  strip.addEventListener("mouseleave", () => paused = false);
+
+  strip.addEventListener("scroll", () => {
+    userInteracting = true;
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => userInteracting = false, 400);
+  }, { passive: true });
+
+  strip.addEventListener("touchstart", () => userInteracting = true, { passive: true });
+  strip.addEventListener("touchend", () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => userInteracting = false, 700);
+  }, { passive: true });
+
+  start();
+})();
+</script>
+
+<!-- Arrow buttons (same as index) -->
+<script>
+(() => {
+  const strip = document.querySelector(".biz-strip");
+  const track = document.getElementById("bizTrack");
+  const leftBtn = document.querySelector(".biz-arrow.left");
+  const rightBtn = document.querySelector(".biz-arrow.right");
+  if (!strip || !track || !leftBtn || !rightBtn) return;
+
+  const getStep = () => {
+    const firstCard = track.querySelector(".biz-card");
+    if (!firstCard) return 250;
+
+    const trackStyles = window.getComputedStyle(track);
+    const gap = parseFloat(trackStyles.gap || "0");
+    const cardWidth = firstCard.getBoundingClientRect().width;
+
+    return cardWidth + gap;
+  };
+
+  leftBtn.addEventListener("click", () => {
+    strip.scrollBy({ left: -getStep(), behavior: "smooth" });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    strip.scrollBy({ left: getStep(), behavior: "smooth" });
+  });
+})();
+</script>
+
+<!-- Dropdown click-open (same as index) -->
+<script>
+(() => {
+  const dd = document.querySelector(".nav-dropdown");
+  if (!dd) return;
+
+  const btn = dd.querySelector(".nav-dropbtn");
+  const menu = dd.querySelector(".nav-dropmenu");
+
+  const close = () => {
+    dd.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  const open = () => {
+    dd.classList.add("is-open");
+    btn.setAttribute("aria-expanded", "true");
+  };
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dd.classList.contains("is-open") ? close() : open();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!dd.contains(e.target)) close();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+
+  menu.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (a) close();
+  });
+})();
+</script>
 
 </body>
 </html>
-
