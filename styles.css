@@ -3796,3 +3796,26 @@ html, body{
 .top-hero{
   padding-top: 130px;     /* adjust if needed */
 }
+
+.top-contact-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+.top-nav{
+  position: fixed;
+  top: 56px; /* adjust if needed */
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: transparent;
+}
+
+/* Push hero down below the fixed bars */
+.top-hero{
+  padding-top: 130px;
+}
+
