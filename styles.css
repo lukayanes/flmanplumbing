@@ -3722,3 +3722,32 @@ body{
   padding-top: 130px;     /* 56px bar + ~74px nav */
 }
 
+/* STEP 1 (clean): Pin bars without creating white gaps */
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* kills the right-side white strip from any tiny overflow */
+}
+
+/* Orange bar pinned */
+.top-contact-bar{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 10000;
+}
+
+/* Nav pinned under orange bar */
+.top-nav{
+  position: fixed;
+  top: 56px;           /* adjust if your orange bar height differs */
+  left: 0; right: 0;
+  z-index: 9999;
+  background: transparent !important;
+}
+
+/* Instead of pushing the whole BODY down (creates white),
+   push only the HERO header down (keeps the hero image behind the nav) */
+.top-hero{
+  padding-top: 130px;  /* 56px bar + ~74px nav (adjust if needed) */
+}
+
