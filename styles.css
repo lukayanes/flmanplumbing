@@ -144,7 +144,7 @@ a{
   left: 0;
   right: 0;
   z-index: 9999;
-  padding: 18px 24px;
+  padding: 10px 24px;
   background: rgba(0,0,0,0.35);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -194,7 +194,7 @@ a{
 }
 
 .nav-logo img{
-  height: 170px;
+  height: 120px;
   width: auto;
   display: block;
   filter: drop-shadow(0 8px 18px rgba(0,0,0,0.35));
