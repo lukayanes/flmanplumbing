@@ -3751,3 +3751,7 @@ html, body{
   padding-top: 130px;  /* 56px bar + ~74px nav (adjust if needed) */
 }
 
+/* STEP 1b: Pinned stack at top (nav sits under orange bar) */
+.top-contact-bar{ top: 0 !important; }
+.top-nav{ top: 56px !important; } /* match contact bar height */
+
