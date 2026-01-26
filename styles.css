@@ -33,7 +33,7 @@
 }
 
 /* 3-column nav: left links, center , right links/icons */
-.top-nav-inner{
+-inner{
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -133,7 +133,7 @@
 
 /* Mobile: stack nav rows but keep logo centered */
 @media (max-width: 900px){
-  .top-nav-inner{
+  -inner{
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 14px;
@@ -1302,9 +1302,6 @@ button {
   text-underline-offset: 4px;
 }
 
-.top-header .top-nav{
-  position: relative;
-}
 
 /* Remove hero background image on non-home pages */
 .top-header{
@@ -1519,8 +1516,7 @@ html.is-loaded .about-hero .hero-bg{
     background-size: cover !important;
   }
 
-  /* Stack nav: links row, logo, links row */
-  .top-nav { position: relative !important; padding: 14px 14px !important; }
+
 
   .top-nav-inner{
     grid-template-columns: 1fr !important;
@@ -2201,11 +2197,6 @@ html.is-loaded .top-hero::before{
 .top-header{
   background: #0b1f33 !important;
   background-image: none !important;
-}
-
-.top-header .top-nav{
-  position: relative !important;  /* stop absolute hero nav */
-  padding: 18px 16px !important;
 }
 
 .top-header .hero-overlay{
