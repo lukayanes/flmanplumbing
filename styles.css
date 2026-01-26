@@ -3777,3 +3777,22 @@ html, body{
 .top-hero{
   padding-top: 130px !important;
 }
+
+.top-contact-bar{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 10000;
+}
+
+.top-nav{
+  position: fixed;
+  top: 56px;              /* adjust if orange bar height differs */
+  left: 0; right: 0;
+  z-index: 9999;
+  background: transparent;
+}
+
+/* push hero down below both fixed bars */
+.top-hero{
+  padding-top: 130px;     /* adjust if needed */
+}
