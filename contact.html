@@ -2,133 +2,287 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Florida Man Plumbing</title>
-  <meta name="description" content="Contact Florida Man Plumbing for a free quote." />
-  <link rel="icon" href="./assets/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700;800&family=Unica+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="description" content="Contact Florida Man Plumbing — Sarasota, FL" />
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <style>
+    /* Contact hero background image */
+    .about-split:first-of-type{
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("./assets/Sarasota_Hero.jpg") center top / cover no-repeat;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="top">
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="./index.html" aria-label="Florida Man Plumbing home">
-        <img class="logo" src="./assets/logo.png" alt="Florida Man Plumbing logo">
-        <div class="brand-text">
-          <span class="brand-name">Florida Man Plumbing</span>
-          <span class="brand-sub">Sarasota, FL</span>
+<!-- TOP CONTACT BAR -->
+<div class="top-contact-bar">
+  <div class="top-contact-inner">
+
+    <a class="top-contact-item" href="mailto:anthony@flmanplumbing.com">
+      <span class="top-contact-icon" aria-hidden="true">✉</span>
+      <div class="top-contact-text">
+        <span class="top-contact-label">EMAIL US TODAY</span>
+        <span class="top-contact-value">anthony@flmanplumbing.com</span>
+      </div>
+    </a>
+
+    <a class="top-contact-item" href="tel:19415250835">
+      <span class="top-contact-icon phone-icon" aria-hidden="true">📞</span>
+      <div class="top-contact-text">
+        <span class="top-contact-label">CALL US NOW</span>
+        <span class="top-contact-value">(941) 525-0835</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+      <a href="./about.html">About</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn nav-linklike"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false">
+          Services <span class="nav-caret" aria-hidden="true">▾</span>
+        </button>
+
+        <div class="nav-dropmenu" role="menu">
+          <a role="menuitem" href="./services.html">All Services</a>
+          <a role="menuitem" href="./services.html#commercial-plumbing">Commercial Plumbing</a>
+          <a role="menuitem" href="./services.html#hydro-jetting">Hydro Jetting</a>
+          <a role="menuitem" href="./services.html#residential-plumbing">Residential Plumbing</a>
+          <a role="menuitem" href="./services.html#bathroom-plumbing">Bathroom Plumbing</a>
+          <a role="menuitem" href="./services.html#drain-cleaning">Drain Cleaning</a>
+          <a role="menuitem" href="./services.html#faucet-leak-repairs">Faucet &amp; Leak Repairs</a>
+          <a role="menuitem" href="./services.html#gas-line-services">Gas Line Services</a>
+          <a role="menuitem" href="./services.html#water-filtration">Water Filtration</a>
+          <a role="menuitem" href="./services.html#water-heater-repair">Water Heater Repair</a>
         </div>
+      </div>
+    </div>
+
+    <!-- CENTER LOGO -->
+    <a class="nav-logo" href="./index.html" aria-label="Home">
+      <img src="assets/logo.png" alt="Florida Man Plumbing" />
+    </a>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+      <a href="./reviews.html">Reviews</a>
+      <a class="active" href="./contact.html">Contact</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- CONTACT HERO -->
+<section class="about-split" style="padding-top: calc(var(--contact-bar-h) + 140px);">
+  <div class="container">
+    <p class="about-kicker">
+      <a class="about-link" href="./index.html">
+        HOME <span class="about-arrow">›</span>
       </a>
+    </p>
 
-      <div class="topbar-right">
-        <a class="top-chip" href="tel:19414686310">
-          <span class="chip-kicker">CALL NOW</span>
-          <span class="chip-main">+1 (941) 468-6310</span>
-        </a>
-        <a class="btn small" href="./contact.html#quote">FREE QUOTE</a>
-        <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">MENU</button>
-      </div>
-    </div>
-  </div>
+    <h1 class="about-title" style="margin-top:8px;">
+      CONTACT FLORIDA MAN PLUMBING
+    </h1>
 
-  <div class="navwrap">
-    <div class="container nav-inner">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="" href="./index.html">HOME</a><a class="" href="./about.html">ABOUT</a><a class="" href="./services.html">SERVICES</a><a class="" href="./reviews.html">REVIEWS</a><a class="active" href="./contact.html">CONTACT</a>
-      </nav>
-    </div>
+    <div class="about-underline"></div>
 
-    <div id="mobileNav" class="mobile-nav" hidden>
-      <a href="./index.html">Home</a><a href="./about.html">About</a><a href="./services.html">Services</a><a href="./reviews.html">Reviews</a><a href="./contact.html">Contact</a>
-      <a class="mobile-call" href="tel:19414686310">Call +1 (941) 468-6310</a>
-      <a class="mobile-quote" href="./contact.html#quote">Request a Free Quote</a>
-    </div>
-  </div>
-</header>
+    <p class="about-body" style="max-width:900px;">
+      Need plumbing help fast? Request a free quote or call us directly.
+      We’re available for residential and commercial plumbing throughout Sarasota.
+    </p>
 
-<main>
-
-<section class="page-hero">
-  <div class="container page-hero-inner">
-    <h1>Contact</h1>
-    <p class="lead">Request a quote or call now—plumbing help is one click away.</p>
-    <div class="hero-actions">
-      <a class="btn" href="tel:19414686310">Call +1 (941) 468-6310</a>
-      <a class="btn ghost" href="#quote">Request Quote</a>
+    <div style="margin-top:22px;">
+      <a class="last-cta-phone" href="tel:19415250835">☎ +1 (941) 525-0835</a>
     </div>
   </div>
 </section>
 
-<section id="quote" class="section texture">
-  <div class="container contact-split">
-    <div>
-      <h2>How can we help?</h2>
-      <p class="muted">Send a message and we’ll respond ASAP. If it’s urgent, call now.</p>
+<!-- CONTACT CONTENT (ABOUT-STYLE SPLIT) -->
+<section class="about-split" id="quote">
+  <div class="container about-split-grid">
 
-      <div class="contact-cards">
-        <div class="contact-card">
-          <h3>Phone</h3>
-          <a href="tel:19414686310">+1 (941) 468-6310</a>
-          <p class="muted">Emergency calls welcome 24/7</p>
-        </div>
-        <div class="contact-card">
-          <h3>Service Area</h3>
-          <p class="muted">Sarasota & surrounding areas</p>
-        </div>
-      </div>
+    <!-- LEFT TEXT -->
+    <div class="about-split-text">
+      <p class="about-kicker"><span class="about-link">GET IN TOUCH</span></p>
 
-      <div class="note">
-        <strong>Want this to submit somewhere?</strong>
-        Since GitHub Pages is static, you can embed a GoHighLevel/LeadConnector form (iframe) or connect this to Formspree.
+      <h2 class="about-title">Request a Free Plumbing Quote</h2>
+      <div class="about-underline"></div>
+
+      <p class="about-body">
+        Fill out the form and one of our licensed plumbers will contact you shortly.
+        For emergencies, call us directly — we’re available 24/7.
+      </p>
+
+      <p class="about-body" style="margin-top:14px;">
+        <strong>Service Areas:</strong> Sarasota, Siesta Key, Gulf Gate, South Sarasota,
+        and surrounding areas.
+      </p>
+
+      <p class="about-body" style="margin-top:14px;">
+        <strong>Email:</strong>
+        <a href="mailto:anthony@flmanplumbing.com">anthony@flmanplumbing.com</a><br>
+        <strong>Phone:</strong>
+        <a href="tel:19415250835">(941) 525-0835</a>
+      </p>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="about-split-image">
+      <div class="hero-form-card">
+        <h3 class="form-title">Request a Free Quote</h3>
+        <p class="form-subtitle">We’ll call you back fast.</p>
+
+        <form class="quote-form">
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <textarea name="message" rows="4"
+            placeholder="Please let us know how we can help you..." required></textarea>
+
+          <button type="submit">Request a Free Quote</button>
+        </form>
+
+        <p class="form-disclaimer">
+          By submitting, you agree to receive calls/texts. Msg/data rates may apply.
+        </p>
       </div>
     </div>
 
-    <div class="form-panel">
-      <h3>Get a free quote</h3>
-      <p class="muted">This is a clean placeholder form. Swap it with your GHL iframe when ready.</p>
+  </div>
+</section>
 
-      <form class="form" onsubmit="return false;">
-        <div class="row2">
-          <label><span>First name</span><input required placeholder="First name" autocomplete="given-name"></label>
-          <label><span>Last name</span><input required placeholder="Last name" autocomplete="family-name"></label>
-        </div>
-        <label><span>Phone</span><input required placeholder="+1 (941) 468-6310" autocomplete="tel"></label>
-        <label><span>Email</span><input type="email" placeholder="Email address" autocomplete="email"></label>
-        <label><span>Message</span><textarea rows="5" placeholder="Tell us what’s going on..."></textarea></label>
-        <button class="btn" type="submit">SUBMIT</button>
-        <p class="small muted">For fastest help: <a href="tel:19414686310">+1 (941) 468-6310</a></p>
-      </form>
+<!-- LAST CTA -->
+<section class="last-cta">
+  <div class="last-cta-grid">
+    <div class="last-cta-photo" aria-hidden="true"></div>
 
-      <div class="embed-box">
-        <p class="small"><strong>GHL iframe slot (optional)</strong></p>
-        <pre class="code">&lt;iframe src="https://links.YOURDOMAIN.com/widget/form/XXXX" style="width:100%;height:700px;border:none;"&gt;&lt;/iframe&gt;</pre>
-      </div>
+    <div class="last-cta-panel">
+      <h2 class="last-cta-title">
+        <span class="cta-orange">NEED A LICENSED SARASOTA PLUMBER?</span><br>
+        WE’RE HERE FOR YOU!
+      </h2>
+
+      <p class="last-cta-sub">24/7 EMERGENCY PLUMBING SERVICE AVAILABLE.</p>
+      <div class="last-cta-line"></div>
+
+      <p class="last-cta-body">
+        Plumbing emergencies don’t wait. Call Florida Man Plumbing anytime
+        for fast, reliable service from trusted local professionals.
+      </p>
+
+      <a class="last-cta-phone" href="tel:19415250835">
+        ☎ +1 (941) 525-0835
+      </a>
     </div>
   </div>
 </section>
 
-</main>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <strong>Florida Man Plumbing</strong>
-      <p class="muted">Sarasota & surrounding areas</p>
-      <p class="muted">Emergency calls welcome 24/7: <a href="tel:19414686310">+1 (941) 468-6310</a></p>
+    <div class="footer-col footer-brand">
+      <div class="footer-brand-row">
+        <img class="footer-logo" src="./assets/logo.png" alt="Florida Man Plumbing Logo" />
+        <p class="footer-text">
+          Florida Man Plumbing is a local plumbing company in Sarasota, Florida.
+          We offer residential and commercial plumbing services, including 24/7 emergency plumbing.
+          We’re proud to serve the community with fast response times and honest work.
+        </p>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="./index.html">Home</a><a href="./about.html">About</a><a href="./services.html">Services</a><a href="./reviews.html">Reviews</a><a href="./contact.html">Contact</a>
+
+    <div class="footer-col">
+      <h3>CONTACT INFO</h3>
+      <p class="footer-text">
+        Sarasota, FL<br>
+        <a href="mailto:anthony@flmanplumbing.com">anthony@flmanplumbing.com</a><br>
+        <a href="tel:19415250835">+1 (941) 525-0835</a>
+      </p>
     </div>
-    <div class="footer-right">
-      <p class="small muted">© <span id="y"></span> Florida Man Plumbing. All rights reserved.</p>
+
+    <div class="footer-col">
+      <h3>EMERGENCY PLUMBING</h3>
+      <p class="footer-text">
+        Plumbing issues can strike anytime. Our team is ready 24/7 to help.
+        Don’t hesitate to call.
+      </p>
     </div>
+
   </div>
 </footer>
 
-<script src="./js/main.js"></script>
+<section class="copyright-bar">
+  <div class="container">
+    <p>© <span id="year"></span> Florida Man Plumbing. All Rights Reserved.</p>
+  </div>
+</section>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+  requestAnimationFrame(() => {
+    document.documentElement.classList.add("is-loaded");
+  });
+</script>
+
+<script>
+(() => {
+  const dd = document.querySelector(".nav-dropdown");
+  if (!dd) return;
+
+  const btn = dd.querySelector(".nav-dropbtn");
+  const menu = dd.querySelector(".nav-dropmenu");
+
+  const close = () => {
+    dd.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  const open = () => {
+    dd.classList.add("is-open");
+    btn.setAttribute("aria-expanded", "true");
+  };
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dd.classList.contains("is-open") ? close() : open();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!dd.contains(e.target)) close();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+
+  menu.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (a) close();
+  });
+})();
+</script>
+
 </body>
 </html>
