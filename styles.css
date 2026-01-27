@@ -843,7 +843,7 @@ html.is-loaded .hero-sub{
   padding: 110px 0;
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("./assets/Sarasota_Hero.jpg") center/cover no-repeat;
+    url("./assets/Sarasota_Hero.webp") center/cover no-repeat;
 }
 
 .reviews h2{
@@ -1066,7 +1066,7 @@ html.is-loaded .hero-sub{
 .page-commercial-plumbing .about-split:first-of-type{
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("/assets/Sarasota_Hero.jpg") center top / cover no-repeat;
+    url("/assets/Sarasota_Hero.webp") center top / cover no-repeat;
 }
 
 /* ---- Service page add-ons (scoped) ---- */
