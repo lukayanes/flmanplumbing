@@ -2,111 +2,316 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reviews | Florida Man Plumbing</title>
-  <meta name="description" content="Customer reviews for Florida Man Plumbing." />
-  <link rel="icon" href="./assets/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700;800&family=Unica+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="description" content="Florida Man Plumbing reviews — Sarasota, FL" />
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <style>
+    /* Reviews hero background image (same pattern as services/about) */
+    .about-split:first-of-type{
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("./assets/Sarasota_Hero.jpg") center top / cover no-repeat;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="top">
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="./index.html" aria-label="Florida Man Plumbing home">
-        <img class="logo" src="./assets/logo.png" alt="Florida Man Plumbing logo">
-        <div class="brand-text">
-          <span class="brand-name">Florida Man Plumbing</span>
-          <span class="brand-sub">Sarasota, FL</span>
+<!-- TOP CONTACT BAR -->
+<div class="top-contact-bar">
+  <div class="top-contact-inner">
+
+    <a class="top-contact-item" href="mailto:anthony@flmanplumbing.com">
+      <span class="top-contact-icon" aria-hidden="true">✉</span>
+      <div class="top-contact-text">
+        <span class="top-contact-label">EMAIL US TODAY</span>
+        <span class="top-contact-value">anthony@flmanplumbing.com</span>
+      </div>
+    </a>
+
+    <a class="top-contact-item" href="tel:19415250835">
+      <span class="top-contact-icon phone-icon" aria-hidden="true">📞</span>
+      <div class="top-contact-text">
+        <span class="top-contact-label">CALL US NOW</span>
+        <span class="top-contact-value">(941) 525-0835</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+      <a href="./about.html">About</a>
+
+      <!-- Services Dropdown -->
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn nav-linklike"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false">
+          Services <span class="nav-caret" aria-hidden="true">▾</span>
+        </button>
+
+        <div class="nav-dropmenu" role="menu" aria-label="Services submenu">
+          <a role="menuitem" href="./services.html">All Services</a>
+          <a role="menuitem" href="./services.html#commercial-plumbing">Commercial Plumbing</a>
+          <a role="menuitem" href="./services.html#hydro-jetting">Hydro Jetting</a>
+          <a role="menuitem" href="./services.html#residential-plumbing">Residential Plumbing</a>
+          <a role="menuitem" href="./services.html#bathroom-plumbing">Bathroom Plumbing</a>
+          <a role="menuitem" href="./services.html#drain-cleaning">Drain Cleaning</a>
+          <a role="menuitem" href="./services.html#faucet-leak-repairs">Faucet &amp; Leak Repairs</a>
+          <a role="menuitem" href="./services.html#gas-line-services">Gas Line Services</a>
+          <a role="menuitem" href="./services.html#water-filtration">Water Filtration</a>
+          <a role="menuitem" href="./services.html#water-heater-repair">Water Heater Repair</a>
         </div>
-      </a>
-
-      <div class="topbar-right">
-        <a class="top-chip" href="tel:19414686310">
-          <span class="chip-kicker">CALL NOW</span>
-          <span class="chip-main">+1 (941) 468-6310</span>
-        </a>
-        <a class="btn small" href="./contact.html#quote">FREE QUOTE</a>
-        <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">MENU</button>
       </div>
     </div>
-  </div>
 
-  <div class="navwrap">
-    <div class="container nav-inner">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="" href="./index.html">HOME</a><a class="" href="./about.html">ABOUT</a><a class="" href="./services.html">SERVICES</a><a class="active" href="./reviews.html">REVIEWS</a><a class="" href="./contact.html">CONTACT</a>
-      </nav>
+    <!-- CENTER LOGO -->
+    <a class="nav-logo" href="./index.html" aria-label="Home">
+      <img src="assets/logo.png" alt="Florida Man Plumbing" />
+    </a>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+      <a class="active" href="./reviews.html">Reviews</a>
+      <a href="./contact.html">Contact</a>
     </div>
 
-    <div id="mobileNav" class="mobile-nav" hidden>
-      <a href="./index.html">Home</a><a href="./about.html">About</a><a href="./services.html">Services</a><a href="./reviews.html">Reviews</a><a href="./contact.html">Contact</a>
-      <a class="mobile-call" href="tel:19414686310">Call +1 (941) 468-6310</a>
-      <a class="mobile-quote" href="./contact.html#quote">Request a Free Quote</a>
-    </div>
   </div>
-</header>
+</nav>
 
-<main>
-
-<section class="page-hero">
-  <div class="container page-hero-inner">
-    <h1>Reviews</h1>
-    <p class="lead">Fast, honest, dependable—replace these with your real customer reviews anytime.</p>
-  </div>
-</section>
-
-<section class="section texture">
+<!-- REVIEWS HERO (built like about/services hero) -->
+<section class="about-split" style="padding-top: calc(var(--contact-bar-h) + 140px);">
   <div class="container">
-    <div class="grid3">
-      <figure class="review">
-        <blockquote>“Showed up quickly, explained everything, and fixed the problem the same day.”</blockquote>
-        <figcaption>— Sarasota homeowner</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote>“Upfront pricing and clean work. Great communication throughout.”</blockquote>
-        <figcaption>— Local resident</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote>“Reliable commercial service—got our business back up and running fast.”</blockquote>
-        <figcaption>— Business owner</figcaption>
-      </figure>
+    <p class="about-kicker">
+      <a class="about-link" href="./index.html">
+        HOME <span class="about-arrow">›</span>
+      </a>
+    </p>
+
+    <h1 class="about-title" style="margin-top: 8px;">
+      CUSTOMER REVIEWS IN SARASOTA, FL
+    </h1>
+
+    <div class="about-underline"></div>
+
+    <p class="about-body" style="max-width: 900px;">
+      We take pride in fast response times, honest work, and clean craftsmanship.
+      Here’s what Sarasota customers say after working with Florida Man Plumbing.
+    </p>
+
+    <div style="margin-top:22px;">
+      <a class="last-cta-phone" href="tel:19415250835">☎ +1 (941) 525-0835</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS SECTION (about-style wrapper + your existing review-grid inside) -->
+<section class="about-split" id="reviews">
+  <div class="container">
+    <p class="about-kicker"><span class="about-link">REAL FEEDBACK</span></p>
+
+    <h2 class="about-title">From Homes to Businesses, We Keep Your Plumbing Stress-Free.</h2>
+    <div class="about-underline"></div>
+
+    <p class="about-body" style="max-width: 900px;">
+      Need help fast? Request a free quote and we’ll call you back quickly.
+    </p>
+
+    <div style="margin-top:18px;">
+      <a class="last-cta-phone" href="./contact.html#quote">Request a Free Quote</a>
     </div>
 
-    <div class="callout">
-      <div>
-        <h3>Need help now?</h3>
-        <p class="muted">Call us 24/7 for emergencies or request a free quote.</p>
+    <!-- Uses your existing .review-grid + .review styling from styles.css -->
+    <div class="review-grid" style="margin-top:24px;">
+      <!-- Original 3 -->
+      <div class="review">
+        <h4>“Fast, honest, and super professional. Florida Man Plumbing came out the same day I called and fixed a leak under my kitchen sink in under an hour. The tech explained everything clearly, didn’t try to upsell me, and the price was fair. Clean work and great communication the whole time.”</h4>
+        <p>-Jessica M.</p>
       </div>
-      <div class="callout-actions">
-        <a class="btn" href="tel:19414686310">Call +1 (941) 468-6310</a>
-        <a class="btn ghost" href="./contact.html#quote">Request Quote</a>
+
+      <div class="review">
+        <h4>“Saved us during an emergency. Our water heater started leaking late at night and we were panicking. Florida Man Plumbing answered right away and got someone out quickly. They replaced the shutoff valve, checked everything, and made sure we were good before leaving. Seriously impressed.”</h4>
+        <p>-Ryan T.</p>
+      </div>
+
+      <div class="review">
+        <h4>“Best plumber we’ve used in Sarasota. We had low water pressure and thought it was going to be a huge problem. They diagnosed it fast, fixed it, and even gave tips on preventing it from happening again. Friendly, respectful, and showed up on time. 10/10 would recommend.”</h4>
+        <p>-Melissa G.</p>
+      </div>
+
+      <!-- +6 additional -->
+      <div class="review">
+        <h4>“We had a stubborn clog that kept coming back. They cleared it quickly, explained what caused it, and gave us a simple plan to prevent it. No pressure, no nonsense — just solid work.”</h4>
+        <p>-David R.</p>
+      </div>
+
+      <div class="review">
+        <h4>“Professional from start to finish. They showed up on time, walked me through options, and the final price matched what they quoted. I appreciate the honesty.”</h4>
+        <p>-Amanda L.</p>
+      </div>
+
+      <div class="review">
+        <h4>“Called for a leaking toilet and they handled it the same day. Clean work, respectful in our home, and they tested everything before leaving. Highly recommend.”</h4>
+        <p>-Chris P.</p>
+      </div>
+
+      <div class="review">
+        <h4>“We run a small business and needed a quick fix to keep things open. They came fast, repaired the issue, and helped us avoid a bigger problem. Great service.”</h4>
+        <p>-Sarasota Business Owner</p>
+      </div>
+
+      <div class="review">
+        <h4>“Our water heater stopped heating and they diagnosed it quickly. They explained repair vs replacement clearly and didn’t upsell. We were back to hot water the same day.”</h4>
+        <p>-Nicole S.</p>
+      </div>
+
+      <div class="review">
+        <h4>“Super responsive and easy to work with. The tech was friendly, cleaned up after, and the repair has been perfect since. This is who I’m calling from now on.”</h4>
+        <p>-Brandon K.</p>
       </div>
     </div>
   </div>
 </section>
 
-</main>
+<!-- LAST CTA SECTION (same as index) -->
+<section class="last-cta">
+  <div class="last-cta-grid">
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <strong>Florida Man Plumbing</strong>
-      <p class="muted">Sarasota & surrounding areas</p>
-      <p class="muted">Emergency calls welcome 24/7: <a href="tel:19414686310">+1 (941) 468-6310</a></p>
+    <!-- LEFT IMAGE -->
+    <div class="last-cta-photo" aria-hidden="true"></div>
+
+    <!-- RIGHT PANEL -->
+    <div class="last-cta-panel">
+      <h2 class="last-cta-title">
+        <span class="cta-orange">NEED A LICENSED SARASOTA PLUMBER?</span><br>
+        WE’RE HERE FOR YOU!
+      </h2>
+
+      <p class="last-cta-sub">
+        24/7 EMERGENCY PLUMBING SERVICE AVAILABLE.
+      </p>
+
+      <div class="last-cta-line"></div>
+
+      <p class="last-cta-body">
+        No matter when plumbing problems strike, Florida Man Plumbing is just a call away.
+        With our 24/7 emergency service, we’re ready to help day or night.
+        Don’t wait—get fast, reliable service from the plumber Sarasota trusts.
+      </p>
+
+      <a class="last-cta-phone" href="tel:19415250835">
+        ☎ +1 (941) 525-0835
+      </a>
     </div>
-    <div class="footer-links">
-      <a href="./index.html">Home</a><a href="./about.html">About</a><a href="./services.html">Services</a><a href="./reviews.html">Reviews</a><a href="./contact.html">Contact</a>
+
+  </div>
+</section>
+
+<!-- FOOTER (fixed closing tags) -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <!-- LEFT -->
+    <div class="footer-col footer-brand">
+      <div class="footer-brand-row">
+        <img class="footer-logo" src="./assets/logo.png" alt="Florida Man Plumbing Logo" />
+        <p class="footer-text">
+          Florida Man Plumbing is a local plumbing company in Sarasota, Florida.
+          We offer residential and commercial plumbing services, including 24/7 emergency plumbing.
+          We’re proud to serve the community with fast response times and honest work—because your plumbing deserves the best.
+        </p>
+      </div>
     </div>
-    <div class="footer-right">
-      <p class="small muted">© <span id="y"></span> Florida Man Plumbing. All rights reserved.</p>
+
+    <!-- MIDDLE -->
+    <div class="footer-col">
+      <h3>CONTACT INFO</h3>
+      <p class="footer-text">
+        Sarasota, FL <br />
+        <a href="mailto:anthony@flmanplumbing.com">anthony@flmanplumbing.com</a><br />
+        <a href="tel:19415250835">+1 (941) 525-0835 </a>
+      </p>
     </div>
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h3>EMERGENCY PLUMBING</h3>
+      <p class="footer-text">
+        We understand that failed plumbing can be an emergency.
+        That’s why our team is here 24/7 to help assist you in the event you have a plumbing failure.
+        Don’t hesitate to call.
+      </p>
+    </div>
+
   </div>
 </footer>
 
-<script src="./js/main.js"></script>
+<section class="copyright-bar">
+  <div class="container">
+    <p>© <span id="year"></span> Florida Man Plumbing. All Rights Reserved.</p>
+  </div>
+</section>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- Page-load animation trigger -->
+<script>
+  requestAnimationFrame(() => {
+    document.documentElement.classList.add("is-loaded");
+  });
+</script>
+
+<!-- Dropdown click-open (same as index/services) -->
+<script>
+(() => {
+  const dd = document.querySelector(".nav-dropdown");
+  if (!dd) return;
+
+  const btn = dd.querySelector(".nav-dropbtn");
+  const menu = dd.querySelector(".nav-dropmenu");
+
+  const close = () => {
+    dd.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  const open = () => {
+    dd.classList.add("is-open");
+    btn.setAttribute("aria-expanded", "true");
+  };
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dd.classList.contains("is-open") ? close() : open();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!dd.contains(e.target)) close();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+
+  menu.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (a) close();
+  });
+})();
+</script>
+
 </body>
 </html>
