@@ -1056,3 +1056,267 @@ html.is-loaded .hero-sub{
   text-transform: uppercase;
   font-weight: 700;
 }
+
+/* =========================================================
+   COMMERCIAL PLUMBING PAGE ONLY
+   (scoped via <body class="page-commercial-plumbing">)
+   ========================================================= */
+
+/* Hero background image (same method as services hub) */
+.page-commercial-plumbing .about-split:first-of-type{
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("/assets/Sarasota_Hero.jpg") center top / cover no-repeat;
+}
+
+/* ---- Service page add-ons (scoped) ---- */
+.page-commercial-plumbing .svc-hero-cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+.page-commercial-plumbing .svc-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 16px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:700;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.10);
+  color:#fff;
+}
+
+.page-commercial-plumbing .svc-btn.ghost{ background:transparent; }
+
+/* ---- WHITE SPLIT SECTION ---- */
+.page-commercial-plumbing .svc-split{
+  background:#fff;
+  color:#0b1f33;
+  padding:70px 0;
+}
+
+.page-commercial-plumbing .svc-split-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:42px;
+  align-items:center;
+}
+
+.page-commercial-plumbing .svc-title{
+  font-size:34px;
+  line-height:1.1;
+  margin:10px 0 0;
+}
+
+.page-commercial-plumbing .svc-body{
+  margin:14px 0;
+  max-width:62ch;
+}
+
+.page-commercial-plumbing .svc-mini{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:18px;
+}
+
+.page-commercial-plumbing .svc-mini-card{
+  border:1px solid rgba(11,31,51,.12);
+  border-radius:16px;
+  padding:14px;
+}
+
+.page-commercial-plumbing .svc-mini-card h4{ margin:0 0 6px; }
+
+.page-commercial-plumbing .svc-split-image img{
+  width:100%;
+  height:auto;
+  border-radius:18px;
+  display:block;
+}
+
+/* ---- DARK ICON GRID ---- */
+.page-commercial-plumbing .svc-dark{
+  padding:80px 0;
+  color:#fff;
+  position:relative;
+}
+
+.page-commercial-plumbing .svc-dark::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(70% 70% at 50% 30%, rgba(255,255,255,.10), transparent 60%),
+    rgba(7,15,28,.92);
+  z-index:0;
+}
+
+.page-commercial-plumbing .svc-dark-inner{
+  position:relative;
+  z-index:1;
+}
+
+.page-commercial-plumbing .svc-dark-title{
+  font-size:34px;
+  margin:0 0 10px;
+}
+
+.page-commercial-plumbing .svc-dark-sub{
+  max-width:80ch;
+  opacity:.92;
+}
+
+.page-commercial-plumbing .svc-dark-line{
+  height:2px;
+  width:44px;
+  background:rgba(255,255,255,.35);
+  margin:18px 0 26px;
+  border-radius:999px;
+}
+
+.page-commercial-plumbing .svc-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:22px;
+}
+
+.page-commercial-plumbing .svc-item{
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  padding:22px;
+  background:rgba(255,255,255,.04);
+}
+
+.page-commercial-plumbing .svc-icon{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.page-commercial-plumbing .svc-item h3{
+  margin:0 0 8px;
+  font-size:16px;
+  letter-spacing:.02em;
+}
+
+.page-commercial-plumbing .svc-item p{
+  margin:0;
+  opacity:.92;
+}
+
+/* ---- PROCESS SECTION ---- */
+.page-commercial-plumbing .svc-process{
+  background:#fff;
+  color:#0b1f33;
+  padding:70px 0;
+}
+
+.page-commercial-plumbing .svc-process-title{
+  font-size:32px;
+  margin:0 0 6px;
+}
+
+.page-commercial-plumbing .svc-steps{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0,1fr));
+  gap:16px;
+  margin-top:22px;
+}
+
+.page-commercial-plumbing .svc-step{
+  border:1px solid rgba(11,31,51,.12);
+  border-radius:18px;
+  padding:18px;
+}
+
+.page-commercial-plumbing .svc-step-num{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  border:1px solid rgba(11,31,51,.18);
+  font-weight:800;
+}
+
+.page-commercial-plumbing .svc-step h3{
+  margin:10px 0 6px;
+  font-size:16px;
+}
+
+.page-commercial-plumbing .svc-step p{
+  margin:0;
+  opacity:.9;
+}
+
+/* ---- FAQ ---- */
+.page-commercial-plumbing .svc-faq{
+  background:#fff;
+  color:#0b1f33;
+  padding:70px 0;
+}
+
+.page-commercial-plumbing .svc-faq-title{
+  font-size:32px;
+  margin:0 0 6px;
+}
+
+.page-commercial-plumbing .faq{
+  margin-top:18px;
+  max-width:900px;
+}
+
+.page-commercial-plumbing .faq-q{
+  width:100%;
+  text-align:left;
+  background:#fff;
+  border:1px solid rgba(11,31,51,.14);
+  border-radius:16px;
+  padding:16px 18px;
+  margin:10px 0;
+  font-weight:800;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  cursor:pointer;
+}
+
+.page-commercial-plumbing .faq-plus{
+  font-size:22px;
+  opacity:.8;
+}
+
+.page-commercial-plumbing .faq-a{
+  border:1px solid rgba(11,31,51,.10);
+  border-radius:16px;
+  padding:14px 18px;
+  margin:-4px 0 12px;
+  opacity:.92;
+}
+
+.page-commercial-plumbing .svc-faq-cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 980px){
+  .page-commercial-plumbing .svc-split-grid{ grid-template-columns:1fr; gap:22px; }
+  .page-commercial-plumbing .svc-grid{ grid-template-columns:1fr 1fr; }
+  .page-commercial-plumbing .svc-steps{ grid-template-columns:1fr 1fr; }
+}
+
+@media (max-width: 640px){
+  .page-commercial-plumbing .svc-mini{ grid-template-columns:1fr; }
+  .page-commercial-plumbing .svc-grid{ grid-template-columns:1fr; }
+  .page-commercial-plumbing .svc-steps{ grid-template-columns:1fr; }
+}
+
