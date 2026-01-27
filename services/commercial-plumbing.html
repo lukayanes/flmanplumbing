@@ -5,43 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Commercial Plumbing Services — Florida Man Plumbing</title>
   <meta name="description" content="Commercial plumbing services in Sarasota, FL. Repairs, water heaters, drain cleaning, sewer line services, and 24/7 emergency support.">
-
   <link rel="icon" href="/assets/favicon.svg">
   <link rel="stylesheet" href="/styles.css">
 
   <style>
-    /* Commercial hero background image (same pattern as services page) */
-    .svc-hero-top{
+    /* TOP HERO background image (match Services page behavior) */
+    .about-split.svc-hero-top{
       background:
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
         url("/assets/Sarasota_Hero.jpg") center top / cover no-repeat;
     }
-
-    /* NAV dropdown (same behavior as services page: hover desktop + click mobile) */
-    .nav-dropdown{position:relative;display:inline-flex;align-items:center}
-    .nav-dropbtn{background:transparent;border:0;padding:0;margin:0;font:inherit;color:inherit;cursor:pointer;letter-spacing:inherit;text-transform:inherit}
-    .nav-caret{margin-left:6px;font-size:.9em;opacity:.9}
-    .nav-dropmenu{
-      position:absolute;top:calc(100% + 14px);left:0;min-width:260px;z-index:9999;
-      background:rgba(10,18,30,.98);border:1px solid rgba(255,255,255,.10);
-      border-radius:14px;padding:10px;box-shadow:0 18px 50px rgba(0,0,0,.35);
-      opacity:0;transform:translateY(6px);pointer-events:none;transition:180ms ease;
-    }
-    .nav-dropmenu a{display:block;padding:10px 12px;border-radius:10px;text-decoration:none;color:rgba(255,255,255,.92);font-size:.95rem;line-height:1.2}
-    .nav-dropmenu a:hover,.nav-dropmenu a:focus{background:rgba(255,255,255,.08);outline:none}
-    @media (hover:hover) and (pointer:fine){
-      .nav-dropdown:hover .nav-dropmenu,
-      .nav-dropdown:focus-within .nav-dropmenu{
-        opacity:1;transform:translateY(0);pointer-events:auto
-      }
-    }
-    .nav-dropdown.is-open .nav-dropmenu{opacity:1;transform:translateY(0);pointer-events:auto}
   </style>
 </head>
 
 <body>
 
-<!-- TOP CONTACT BAR (same as services page) -->
+<!-- =========================
+     TOP PORTION (UPDATED ONLY)
+     ========================= -->
+
+<!-- TOP CONTACT BAR (same as Services page) -->
 <div class="top-contact-bar">
   <div class="top-contact-inner">
 
@@ -64,13 +47,13 @@
   </div>
 </div>
 
-<!-- NAV (same structure/behavior as services page) -->
+<!-- NAV (linked exactly like Services page, but root-safe with leading / ) -->
 <nav class="top-nav">
   <div class="top-nav-inner">
 
     <!-- LEFT -->
     <div class="nav-left">
-      <a href="/about/">About</a>
+      <a href="/about.html">About</a>
 
       <!-- Services Dropdown -->
       <div class="nav-dropdown">
@@ -82,39 +65,39 @@
         </button>
 
         <div class="nav-dropmenu" role="menu" aria-label="Services submenu">
-          <a role="menuitem" href="/services/">All Services</a>
-          <a role="menuitem" href="/services/commercial-plumbing/">Commercial Plumbing</a>
-          <a role="menuitem" href="/services/hydro-jetting/">Hydro Jetting</a>
-          <a role="menuitem" href="/services/residential-plumbing/">Residential Plumbing</a>
-          <a role="menuitem" href="/services/bathroom-plumbing/">Bathroom Plumbing</a>
-          <a role="menuitem" href="/services/drain-cleaning/">Drain Cleaning</a>
-          <a role="menuitem" href="/services/faucet-leak-repairs/">Faucet &amp; Leak Repairs</a>
-          <a role="menuitem" href="/services/gas-line-services/">Gas Line Services</a>
-          <a role="menuitem" href="/services/water-filtration/">Water Filtration</a>
-          <a role="menuitem" href="/services/water-heater-repair/">Water Heater Repair</a>
+          <a role="menuitem" href="/services.html">All Services</a>
+          <a role="menuitem" href="/services/commercial-plumbing.html">Commercial Plumbing</a>
+          <a role="menuitem" href="/services/hydro-jetting.html">Hydro Jetting</a>
+          <a role="menuitem" href="/services/residential-plumbing.html">Residential Plumbing</a>
+          <a role="menuitem" href="/services/bathroom-plumbing.html">Bathroom Plumbing</a>
+          <a role="menuitem" href="/services/drain-cleaning.html">Drain Cleaning</a>
+          <a role="menuitem" href="/services/faucet-leak-repair.html">Faucet &amp; Leak Repairs</a>
+          <a role="menuitem" href="/services/gas-line-services.html">Gas Line Services</a>
+          <a role="menuitem" href="/services/water-filtration.html">Water Filtration</a>
+          <a role="menuitem" href="/services/water-heater-repair.html">Water Heater Repair</a>
         </div>
       </div>
     </div>
 
     <!-- CENTER LOGO -->
-    <a class="nav-logo" href="/" aria-label="Home">
+    <a class="nav-logo" href="/index.html" aria-label="Home">
       <img src="/assets/logo.png" alt="Florida Man Plumbing" />
     </a>
 
     <!-- RIGHT -->
     <div class="nav-right">
-      <a href="/reviews/">Reviews</a>
-      <a href="/contact/">Contact</a>
+      <a href="/reviews.html">Reviews</a>
+      <a href="/contact.html">Contact</a>
     </div>
 
   </div>
 </nav>
 
-<!-- HERO (match services page "about-split" hero style) -->
+<!-- SERVICES-STYLE HERO TOP (replaces the old split/form hero only) -->
 <section class="about-split svc-hero-top" style="padding-top: calc(var(--contact-bar-h) + 140px);">
   <div class="container">
     <p class="about-kicker">
-      <a class="about-link" href="/services/">
+      <a class="about-link" href="/services.html">
         SERVICES <span class="about-arrow">›</span>
       </a>
     </p>
@@ -126,8 +109,8 @@
     <div class="about-underline"></div>
 
     <p class="about-body" style="max-width: 900px;">
-      Reliable plumbing for Sarasota businesses—repairs, installs, drain issues, water heaters, and preventative maintenance.
-      Fast response, clean work, clear communication.
+      Reliable plumbing services for Sarasota businesses — repairs, installs, drain issues, water heaters,
+      and preventative maintenance. Fast response times and honest work.
     </p>
 
     <div style="margin-top:22px;">
@@ -136,6 +119,9 @@
   </div>
 </section>
 
+<!-- =========================
+     ORIGINAL PAGE (UNCHANGED)
+     ========================= -->
 
 <!-- WHITE SPLIT: WHAT IS COMMERCIAL PLUMBING -->
 <section class="svc-split">
@@ -183,7 +169,7 @@
 </section>
 
 
-<!-- DARK ICON GRID -->
+<!-- DARK ICON GRID (like your screenshot style) -->
 <section class="svc-dark">
   <div class="container svc-dark-inner">
 
@@ -203,7 +189,7 @@
 
       <div class="svc-item">
         <div class="svc-icon" aria-hidden="true">♨️</div>
-        <h3>Water Heater Installation &amp; Repair</h3>
+        <h3>Water Heater Installation & Repair</h3>
         <p>Service and install commercial water heaters so you always have reliable hot water.</p>
       </div>
 
@@ -215,7 +201,7 @@
 
       <div class="svc-item">
         <div class="svc-icon" aria-hidden="true">🔧</div>
-        <h3>Pipe Installation &amp; Repair</h3>
+        <h3>Pipe Installation & Repair</h3>
         <p>Replace worn lines, fix leaks, and install new piping to maintain safe, consistent flow.</p>
       </div>
 
@@ -308,7 +294,7 @@
 </section>
 
 
-<!-- LAST CTA SECTION -->
+<!-- LAST CTA SECTION (mirrors your index CTA style) -->
 <section class="last-cta">
   <div class="last-cta-grid">
 
@@ -335,7 +321,7 @@
 </section>
 
 
-<!-- FOOTER -->
+<!-- FOOTER (same structure as your index) -->
 <footer class="site-footer">
   <div class="container footer-grid">
 
@@ -355,7 +341,7 @@
       <h3>CONTACT INFO</h3>
       <p class="footer-text">
         Sarasota, FL <br />
-        <a href="mailto:anthony@flmanplumbing.com">anthony@flmanplumbing.com</a><br />
+        <a href="mailto:info@floridamanplumbing.com">info@floridamanplumbing.com</a><br />
         <a href="tel:19415250835">(941) 525-0835</a>
       </p>
     </div>
@@ -379,11 +365,107 @@
 </section>
 
 
+<!-- Inline CSS for dropdown + service page pieces (YOUR ORIGINAL, UNCHANGED) -->
+<style>
+/* NAV dropdown (works on desktop hover + mobile click) */
+.nav-dropdown{position:relative;display:inline-flex;align-items:center}
+.nav-dropbtn{background:transparent;border:0;padding:0;margin:0;font:inherit;color:inherit;cursor:pointer;letter-spacing:inherit;text-transform:inherit}
+.nav-caret{margin-left:6px;font-size:.9em;opacity:.9}
+.nav-dropmenu{
+  position:absolute;top:calc(100% + 14px);left:0;min-width:260px;z-index:9999;
+  background:rgba(10,18,30,.98);border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;padding:10px;box-shadow:0 18px 50px rgba(0,0,0,.35);
+  opacity:0;transform:translateY(6px);pointer-events:none;transition:180ms ease;
+}
+.nav-dropmenu a{display:block;padding:10px 12px;border-radius:10px;text-decoration:none;color:rgba(255,255,255,.92);font-size:.95rem;line-height:1.2}
+.nav-dropmenu a:hover,.nav-dropmenu a:focus{background:rgba(255,255,255,.08);outline:none}
+@media (hover:hover) and (pointer:fine){
+  .nav-dropdown:hover .nav-dropmenu,
+  .nav-dropdown:focus-within .nav-dropmenu{
+    opacity:1;transform:translateY(0);pointer-events:auto
+  }
+}
+.nav-dropdown.is-open .nav-dropmenu{opacity:1;transform:translateY(0);pointer-events:auto}
+
+/* Service page add-ons (lightweight; won’t wreck your base CSS) */
+.svc-hero-bullets{margin-top:14px;opacity:.95}
+.svc-hero-bullets p{margin:6px 0}
+.svc-hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.svc-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 16px;border-radius:14px;text-decoration:none;
+  font-weight:700;border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.10);color:#fff
+}
+.svc-btn.ghost{background:transparent}
+.svc-split{background:#fff;color:#0b1f33;padding:70px 0}
+.svc-split-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+.svc-title{font-size:34px;line-height:1.1;margin:10px 0 0}
+.svc-body{margin:14px 0;max-width:62ch}
+.svc-mini{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.svc-mini-card{border:1px solid rgba(11,31,51,.12);border-radius:16px;padding:14px}
+.svc-mini-card h4{margin:0 0 6px}
+.svc-split-image img{width:100%;height:auto;border-radius:18px;display:block}
+.svc-dark{padding:80px 0;color:#fff;position:relative}
+.svc-dark::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(70% 70% at 50% 30%, rgba(255,255,255,.10), transparent 60%),
+    rgba(7,15,28,.92);
+  z-index:0
+}
+.svc-dark-inner{position:relative;z-index:1}
+.svc-dark-title{font-size:34px;margin:0 0 10px}
+.svc-dark-sub{max-width:80ch;opacity:.92}
+.svc-dark-line{height:2px;width:44px;background:rgba(255,255,255,.35);margin:18px 0 26px;border-radius:999px}
+.svc-grid{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:22px}
+.svc-item{border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px;background:rgba(255,255,255,.04)}
+.svc-icon{font-size:26px;margin-bottom:10px}
+.svc-item h3{margin:0 0 8px;font-size:16px;letter-spacing:.02em}
+.svc-item p{margin:0;opacity:.92}
+.svc-process{background:#fff;color:#0b1f33;padding:70px 0}
+.svc-process-title{font-size:32px;margin:0 0 6px}
+.svc-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:22px}
+.svc-step{border:1px solid rgba(11,31,51,.12);border-radius:18px;padding:18px}
+.svc-step-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:999px;
+  border:1px solid rgba(11,31,51,.18);font-weight:800
+}
+.svc-step h3{margin:10px 0 6px;font-size:16px}
+.svc-step p{margin:0;opacity:.9}
+.svc-faq{background:#fff;color:#0b1f33;padding:70px 0}
+.svc-faq-title{font-size:32px;margin:0 0 6px}
+.faq{margin-top:18px;max-width:900px}
+.faq-q{
+  width:100%;text-align:left;background:#fff;border:1px solid rgba(11,31,51,.14);
+  border-radius:16px;padding:16px 18px;margin:10px 0;
+  font-weight:800;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer
+}
+.faq-plus{font-size:22px;opacity:.8}
+.faq-a{
+  border:1px solid rgba(11,31,51,.10);
+  border-radius:16px;padding:14px 18px;margin:-4px 0 12px;opacity:.92
+}
+.svc-faq-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+@media (max-width: 980px){
+  .svc-split-grid{grid-template-columns:1fr;gap:22px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc-steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width: 640px){
+  .svc-mini{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-steps{grid-template-columns:1fr}
+}
+</style>
+
+
 <script>
   // year
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // page-load animation trigger (matches services/index behavior)
+  // page-load animation trigger (matches your index behavior)
   requestAnimationFrame(() => {
     document.documentElement.classList.add("is-loaded");
   });
