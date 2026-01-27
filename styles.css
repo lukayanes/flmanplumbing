@@ -1477,3 +1477,111 @@ html.is-loaded .hero-sub{
     display: none;
   }
 }
+
+@media (max-width: 768px){
+  .nav-dropdown{
+    position: relative;
+  }
+
+  .nav-dropmenu{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 10px);
+    width: min(92vw, 520px);
+    background: rgba(10, 15, 25, 0.95);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 2000;
+  }
+
+  .nav-dropdown.open .nav-dropmenu{
+    display: block;
+  }
+
+  .nav-dropmenu a{
+    display: block;
+    padding: 14px 16px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-dropmenu a:last-child{
+    border-bottom: none;
+  }
+}
+
+/* =========================
+   MOBILE: single slim orange contact bar
+   (desktop untouched)
+   ========================= */
+@media (max-width: 768px){
+
+  /* slim the bar */
+  .top-contact-bar{
+    padding: 0 !important;
+  }
+
+  .top-contact-inner{
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    padding: 10px 14px !important;  /* bar height control */
+  }
+
+  /* make the items compact */
+  .top-contact-item{
+    padding: 0 !important;
+    gap: 10px !important;
+  }
+
+  /* hide the big labels and values */
+  .top-contact-label{
+    display: none !important;
+  }
+
+  /* hide the email text only (keep phone number visible) */
+  .top-contact-item:first-child .top-contact-value{
+    display: none !important;
+  }
+
+  /* phone number: keep but smaller */
+  .top-contact-item:last-child .top-contact-value{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em;
+  }
+
+  /* email icon: keep and make it tappable */
+  .top-contact-item:first-child{
+    width: 44px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-right: none !important;
+  }
+
+  .top-contact-item:first-child .top-contact-icon{
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+
+  /* phone icon size */
+  .top-contact-item:last-child .top-contact-icon{
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+
+  /* remove the big stacked layout if it exists */
+  .top-contact-text{
+    display: inline !important;
+  }
+}
+
