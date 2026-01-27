@@ -649,6 +649,37 @@ strip.addEventListener("touchend", () => {
 })();
 </script>
 
+<script>
+(() => {
+  const dd = document.querySelector('.nav-dropdown');
+  const btn = dd?.querySelector('.nav-dropbtn');
+  const menu = dd?.querySelector('.nav-dropmenu');
+  if (!dd || !btn || !menu) return;
+
+  const close = () => {
+    dd.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  };
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const willOpen = !dd.classList.contains('open');
+    close();
+    if (willOpen) {
+      dd.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // prevent inside taps from closing instantly
+  menu.addEventListener('click', (e) => e.stopPropagation());
+
+  // close on outside tap + on scroll (mobile safari weirdness)
+  document.addEventListener('click', close);
+  window.addEventListener('scroll', close, { passive: true });
+})();
+</script>
 
 
 </body>
