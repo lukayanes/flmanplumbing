@@ -900,7 +900,7 @@ html.is-loaded .hero-sub{
 }
 
 .last-cta-photo{
-  background: url("./assets/last-cta-photo.jpg") center/cover no-repeat;
+  background: url("./assets/last-cta-photo.webp") center/cover no-repeat;
   filter: grayscale(15%);
 }
 
