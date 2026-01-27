@@ -624,6 +624,31 @@ strip.addEventListener("touchend", () => {
 })();
 </script>
 
+  <script>
+(() => {
+  const dd = document.querySelector('.nav-dropdown');
+  const btn = document.querySelector('.nav-dropbtn');
+  const menu = document.querySelector('.nav-dropmenu');
+  if (!dd || !btn || !menu) return;
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const open = dd.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // close on outside tap
+  document.addEventListener('click', () => {
+    dd.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  });
+
+  // keep taps inside menu from closing it immediately
+  menu.addEventListener('click', (e) => e.stopPropagation());
+})();
+</script>
+
 
 
 </body>
