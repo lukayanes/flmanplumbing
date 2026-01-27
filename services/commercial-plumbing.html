@@ -9,47 +9,20 @@
   <link rel="stylesheet" href="/styles.css">
 
   <style>
-    /* TOP HERO background image (match Services page behavior) */
+    /* Commercial hero background (same style approach as Services page) */
     .about-split.svc-hero-top{
       background:
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
         url("/assets/Sarasota_Hero.jpg") center top / cover no-repeat;
     }
-    /* Make the Services <button> look EXACTLY like the other nav <a> links */
-.top-nav .nav-linklike{
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  border: 0;
-  padding: 0;
-  margin: 0;
-
-  font: inherit;              /* matches font family/size/weight */
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  color: inherit;
-
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;                   /* keeps caret spacing consistent */
-}
-
   </style>
 </head>
 
 <body>
 
-<!-- =========================
-     TOP PORTION (UPDATED ONLY)
-     ========================= -->
-
 <!-- TOP CONTACT BAR (same as Services page) -->
 <div class="top-contact-bar">
   <div class="top-contact-inner">
-
     <a class="top-contact-item" href="mailto:anthony@flmanplumbing.com">
       <span class="top-contact-icon">✉️</span>
       <span>
@@ -65,11 +38,10 @@
         <span class="top-contact-value">(941) 525-0835</span>
       </span>
     </a>
-
   </div>
 </div>
 
-<!-- NAV (linked exactly like Services page, but root-safe with leading / ) -->
+<!-- NAV (OUTSIDE top-hero = fixes Services button font/size mismatch) -->
 <nav class="top-nav">
   <div class="top-nav-inner">
 
@@ -115,31 +87,33 @@
   </div>
 </nav>
 
-<!-- SERVICES-STYLE HERO TOP (replaces the old split/form hero only) -->
-<section class="about-split svc-hero-top" style="padding-top: calc(var(--contact-bar-h) + 140px);">
-  <div class="container">
-    <p class="about-kicker">
-      <a class="about-link" href="/services.html">
-        SERVICES <span class="about-arrow">›</span>
-      </a>
-    </p>
+<!-- HERO TOP (NO FORM) -->
+<header class="top-hero">
+  <section class="about-split svc-hero-top" style="padding-top: calc(var(--contact-bar-h) + 140px);">
+    <div class="container">
+      <p class="about-kicker">
+        <a class="about-link" href="/services.html">
+          SERVICES <span class="about-arrow">›</span>
+        </a>
+      </p>
 
-    <h1 class="about-title" style="margin-top: 8px;">
-      COMMERCIAL PLUMBING IN SARASOTA, FL
-    </h1>
+      <h1 class="about-title" style="margin-top: 8px;">
+        COMMERCIAL PLUMBING IN SARASOTA, FL
+      </h1>
 
-    <div class="about-underline"></div>
+      <div class="about-underline"></div>
 
-    <p class="about-body" style="max-width: 900px;">
-      Reliable plumbing services for Sarasota businesses — repairs, installs, drain issues, water heaters,
-      and preventative maintenance. Fast response times and honest work.
-    </p>
+      <p class="about-body" style="max-width: 900px;">
+        Reliable plumbing services for Sarasota businesses — repairs, installs, drain issues, water heaters, and preventative
+        maintenance. Fast response times and honest work.
+      </p>
 
-    <div style="margin-top:22px;">
-      <a class="last-cta-phone" href="tel:19415250835">☎ +1 (941) 525-0835</a>
+      <div style="margin-top:22px;">
+        <a class="last-cta-phone" href="tel:19415250835">☎ +1 (941) 525-0835</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</header>
 
 <!-- =========================
      ORIGINAL PAGE (UNCHANGED)
