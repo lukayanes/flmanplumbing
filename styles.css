@@ -1584,4 +1584,35 @@ html.is-loaded .hero-sub{
     display: inline !important;
   }
 }
+@media (max-width: 768px){
+
+  .nav-dropdown{
+    position: relative;
+  }
+
+  /* override any existing hover logic */
+  .nav-dropmenu{
+    display: none !important;
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: min(92vw, 520px) !important;
+    max-height: 65vh;
+    overflow: auto;
+    z-index: 9999 !important;
+  }
+
+  /* show when JS adds .open */
+  .nav-dropdown.open .nav-dropmenu{
+    display: block !important;
+  }
+
+  /* make items easy to tap */
+  .nav-dropmenu a{
+    display: block;
+    padding: 14px 16px;
+  }
+}
+
 
