@@ -15,6 +15,28 @@
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
         url("/assets/Sarasota_Hero.jpg") center top / cover no-repeat;
     }
+    /* Make the Services <button> look EXACTLY like the other nav <a> links */
+.top-nav .nav-linklike{
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  font: inherit;              /* matches font family/size/weight */
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;                   /* keeps caret spacing consistent */
+}
+
   </style>
 </head>
 
