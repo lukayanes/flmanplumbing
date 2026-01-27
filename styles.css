@@ -1320,3 +1320,84 @@ html.is-loaded .hero-sub{
   .page-commercial-plumbing .svc-steps{ grid-template-columns:1fr; }
 }
 
+
+/* ===============================
+   MOBILE NAV FIX
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Prevent double fixed stacking chaos */
+  body {
+    padding-top: 110px; /* space for contact bar + nav */
+  }
+
+  /* Top contact bar stays fixed */
+  .top-contact-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  /* Main nav wrapper */
+  .navwrap {
+    position: fixed;
+    top: 56px; /* height of contact bar */
+    left: 0;
+    right: 0;
+    background: #0d1b2a;
+    z-index: 999;
+  }
+
+  /* Hide desktop nav links */
+  .nav {
+    display: none;
+  }
+
+  /* Hamburger button */
+  .mobile-menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Mobile nav dropdown */
+  .mobile-nav {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    right: 0;
+    background: #0d1b2a;
+    display: none;
+    flex-direction: column;
+    padding: 12px 0;
+    z-index: 998;
+  }
+
+  .mobile-nav a {
+    padding: 16px 24px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mobile-nav a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-nav a:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  /* Show menu when active */
+  .mobile-nav.active {
+    display: flex;
+  }
+}
+
