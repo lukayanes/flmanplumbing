@@ -1624,3 +1624,16 @@ html.is-loaded .hero-sub{
   }
 }
 
+@media (max-width: 900px){
+  /* kill the 'open' system on mobile */
+  .nav-dropdown.open .nav-dropmenu{ display: none !important; }
+
+  /* force the original system */
+  .nav-dropdown.is-open .nav-dropmenu{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+    display: block !important; /* harmless, but ensures it's not collapsed */
+  }
+}
+
