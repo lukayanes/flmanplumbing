@@ -1409,11 +1409,12 @@ html.is-loaded .hero-sub{
   /* shrink the whole nav bar height */
   .top-nav{
     padding: 8px 0 !important;
-    background: rgba(0,0,0,0.55) !important; /* keep your black glass vibe, but thinner */
+    background: rgba(0,0,0,0.55) !important;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
 
-  /* make the inner layout compact */
+  /* compact */
   .top-nav-inner{
     display: flex !important;
     flex-direction: column !important;
@@ -1421,16 +1422,14 @@ html.is-loaded .hero-sub{
     gap: 8px !important;
   }
 
-  /* LOGO smaller (the big bar is usually from logo height + padding) */
-  .nav-logo,
-  .top-nav .logo,
-  .top-nav img{
-    max-height: 44px !important;   /* adjust 38–52 to taste */
-    height: auto !important;
+  /* smaller logo */
+  .nav-logo img{
+    height: 44px !important;
     width: auto !important;
+    max-height: 44px !important;
   }
 
-  /* put all nav links in ONE row */
+  /* keep left/right links in one row */
   .nav-left,
   .nav-right{
     width: 100% !important;
@@ -1440,12 +1439,7 @@ html.is-loaded .hero-sub{
     gap: 18px !important;
   }
 
-  /* if reviews/contact are currently below the logo, pull them up */
-  .nav-right{
-    margin-top: 0 !important;
-  }
-
-  /* make tap targets nicer */
+  /* tap targets */
   .top-nav a,
   .nav-dropbtn{
     font-size: 16px !important;
@@ -1453,52 +1447,46 @@ html.is-loaded .hero-sub{
     line-height: 1 !important;
   }
 
-  /* dropdown menu should be full-width and easy to tap on mobile */
-  .nav-dropmenu{
-    position: static !important;
-    width: 100% !important;
-    max-width: 520px;
-    margin: 8px auto 0 !important;
-    border-radius: 12px;
+  /* IMPORTANT: let dropdown render, don't clip */
+  .top-nav,
+  .top-nav-inner,
+  .nav-left,
+  .nav-right{
+    overflow: visible !important;
   }
 
-  .nav-dropmenu a{
-    padding: 14px 16px !important;
-    font-size: 16px !important;
-  }
-
-  /* open state controlled by JS */
-  .nav-dropdown.open .nav-dropmenu{
-    display: block !important;
-  }
-
-  /* by default hide it (mobile hover won't work) */
-  .nav-dropmenu{
-    display: none;
-  }
-}
-
-@media (max-width: 768px){
   .nav-dropdown{
-    position: relative;
+    position: relative !important;
   }
 
+  /* Base: hidden until .is-open is set by JS */
   .nav-dropmenu{
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: calc(100% + 10px);
-    width: min(92vw, 520px);
-    background: rgba(10, 15, 25, 0.95);
-    border: 1px solid rgba(255,255,255,0.10);
-    border-radius: 12px;
-    overflow: hidden;
-    z-index: 2000;
+    display: block !important;          /* keep in flow for opacity system */
+    opacity: 0 !important;
+    transform: translateY(6px) !important;
+    pointer-events: none !important;
+
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(6px) !important;
+    width: min(92vw, 520px) !important;
+
+    background: rgba(10, 15, 25, 0.95) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    border-radius: 12px !important;
+    overflow: auto !important;
+    max-height: 65vh !important;
+    z-index: 20000 !important;
+
+    -webkit-overflow-scrolling: touch;
   }
 
-  .nav-dropdown.open .nav-dropmenu{
-    display: block;
+  /* Show on mobile when JS adds .is-open */
+  .nav-dropdown.is-open .nav-dropmenu{
+    opacity: 1 !important;
+    transform: translateX(-50%) translateY(0) !important;
+    pointer-events: auto !important;
   }
 
   .nav-dropmenu a{
@@ -1520,7 +1508,6 @@ html.is-loaded .hero-sub{
    ========================= */
 @media (max-width: 768px){
 
-  /* slim the bar */
   .top-contact-bar{
     padding: 0 !important;
   }
@@ -1532,33 +1519,31 @@ html.is-loaded .hero-sub{
     align-items: center !important;
     justify-content: space-between !important;
     gap: 12px !important;
-    padding: 10px 14px !important;  /* bar height control */
+    padding: 10px 14px !important;
   }
 
-  /* make the items compact */
   .top-contact-item{
     padding: 0 !important;
     gap: 10px !important;
   }
 
-  /* hide the big labels and values */
   .top-contact-label{
     display: none !important;
   }
 
-  /* hide the email text only (keep phone number visible) */
+  /* hide email text, keep icon */
   .top-contact-item:first-child .top-contact-value{
     display: none !important;
   }
 
-  /* phone number: keep but smaller */
+  /* keep phone number */
   .top-contact-item:last-child .top-contact-value{
     font-size: 16px !important;
     font-weight: 700 !important;
     letter-spacing: 0.02em;
   }
 
-  /* email icon: keep and make it tappable */
+  /* email icon only button-like */
   .top-contact-item:first-child{
     width: 44px !important;
     height: 36px !important;
@@ -1573,67 +1558,12 @@ html.is-loaded .hero-sub{
     line-height: 1 !important;
   }
 
-  /* phone icon size */
   .top-contact-item:last-child .top-contact-icon{
     font-size: 20px !important;
     line-height: 1 !important;
   }
 
-  /* remove the big stacked layout if it exists */
   .top-contact-text{
     display: inline !important;
   }
 }
-@media (max-width: 768px){
-
-  .nav-dropdown{
-    position: relative;
-  }
-
-  /* override any existing hover logic */
-  .nav-dropmenu{
-    display: none !important;
-    position: absolute !important;
-    top: calc(100% + 10px) !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: min(92vw, 520px) !important;
-    max-height: 65vh;
-    overflow: auto;
-    z-index: 9999 !important;
-  }
-
-  /* show when JS adds .open */
-  .nav-dropdown.open .nav-dropmenu{
-    display: block !important;
-  }
-
-  /* make items easy to tap */
-  .nav-dropmenu a{
-    display: block;
-    padding: 14px 16px;
-  }
-}
-
-@media (max-width: 768px){
-  .nav-dropmenu{
-    display: none !important;
-  }
-  .nav-dropdown.open .nav-dropmenu{
-    display: block !important;
-  }
-}
-
-@media (max-width: 900px){
-  /* kill the 'open' system on mobile */
-  .nav-dropdown.open .nav-dropmenu{ display: none !important; }
-
-  /* force the original system */
-  .nav-dropdown.is-open .nav-dropmenu{
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    pointer-events: auto !important;
-    display: block !important; /* harmless, but ensures it's not collapsed */
-  }
-}
-
