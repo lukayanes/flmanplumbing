@@ -342,18 +342,3 @@
       document.documentElement.classList.add("is-loaded");
     });
   </script>
-
-  <!-- Services dropdown JS (mobile tap + outside click close) -->
-  <script>
-    (() => {
-      const dd = document.querySelector(".nav-dropdown");
-      if (!dd) return;
-
-      const btn = dd.querySelector(".nav-dropbtn");
-      const menu = dd.querySelector(".nav-dropmenu");
-
-      const close = () => {
-        dd.classList.remove("is-open");
-        btn.setAttribute("aria-expanded", "false");
-      };
-
