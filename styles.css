@@ -1615,4 +1615,12 @@ html.is-loaded .hero-sub{
   }
 }
 
+@media (max-width: 768px){
+  .nav-dropmenu{
+    display: none !important;
+  }
+  .nav-dropdown.open .nav-dropmenu{
+    display: block !important;
+  }
+}
 
