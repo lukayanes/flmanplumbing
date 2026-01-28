@@ -613,46 +613,7 @@
     })();
   </script>
 
-  <!-- Dropdown click-open (same as index) -->
-  <script>
-    (() => {
-      const dd = document.querySelector(".nav-dropdown");
-      if (!dd) return;
-
-      const btn = dd.querySelector(".nav-dropbtn");
-      const menu = dd.querySelector(".nav-dropmenu");
-
-      const close = () => {
-        dd.classList.remove("is-open");
-        btn.setAttribute("aria-expanded", "false");
-      };
-
-      const open = () => {
-        dd.classList.add("is-open");
-        btn.setAttribute("aria-expanded", "true");
-      };
-
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        dd.classList.contains("is-open") ? close() : open();
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!dd.contains(e.target)) close();
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") close();
-      });
-
-      menu.addEventListener("click", (e) => {
-        const a = e.target.closest("a");
-        if (a) close();
-      });
-    })();
-  </script>
-
+ 
   <script src="/js/main.js" defer></script>
 
 </body>
