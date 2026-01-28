@@ -341,51 +341,8 @@
     });
   </script>
 
-  <!-- Services dropdown JS (mobile tap + outside click close) -->
-  <script>
-    (() => {
-      const dd = document.querySelector(".nav-dropdown");
-      if (!dd) return;
-
-      const btn = dd.querySelector(".nav-dropbtn");
-      const menu = dd.querySelector(".nav-dropmenu");
-
-      // a11y
-      btn.setAttribute("aria-haspopup", "true");
-      btn.setAttribute("aria-expanded", "false");
-
-      const close = () => {
-        dd.classList.remove("is-open");
-        btn.setAttribute("aria-expanded", "false");
-      };
-
-      const open = () => {
-        dd.classList.add("is-open");
-        btn.setAttribute("aria-expanded", "true");
-      };
-
-      // toggle on click (works for mobile + desktop)
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        dd.classList.contains("is-open") ? close() : open();
-      });
-
-      // close if click outside
-      document.addEventListener("click", (e) => {
-        if (!dd.contains(e.target)) close();
-      });
-
-      // close on escape
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") close();
-      });
-
-      // prevent menu clicks from closing immediately
-      menu.addEventListener("click", (e) => e.stopPropagation());
-    })();
-  </script>
-
+  
+  
   <!-- FAQ accordion JS (same pattern you’re using across services) -->
   <script>
     (() => {
