@@ -306,7 +306,7 @@ a{
 
   background:
     linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url("./assets/flmanhero2.webp") center/cover no-repeat;
+    url("./assets/flmanhero3.webp") center/cover no-repeat;
 
   /* push hero content below fixed bars WITHOUT creating a gap above hero */
   padding-top: calc(var(--contact-bar-h) + 120px);
@@ -354,7 +354,7 @@ html.is-loaded .top-hero::before{
 .top-hero{
   background:
     linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url("./assets/flmanhero2.webp") center top/cover no-repeat;
+    url("./assets/flmanhero3.webp") center top/cover no-repeat;
 }
 
 .hero-overlay{
