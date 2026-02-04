@@ -66,3 +66,36 @@ if(btn && mobile){
     if (e.key === "Escape") close();
   });
 })();
+
+<script>
+(() => {
+  const form = document.getElementById("quoteForm");
+  if (!form) return;
+
+  const thanks = document.getElementById("quoteThanks");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (response.ok) {
+        form.style.display = "none";
+        if (thanks) thanks.style.display = "block";
+      } else {
+        alert("Something went wrong. Please try again or call us.");
+      }
+    } catch (err) {
+      alert("Network error. Please try again.");
+    }
+  });
+})();
+</script>
+
