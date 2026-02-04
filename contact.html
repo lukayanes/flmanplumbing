@@ -167,29 +167,41 @@
       </p>
     </div>
 
-    <!-- RIGHT FORM -->
     <div class="about-split-image">
-      <div class="hero-form-card">
-        <h3 class="form-title">Request a Free Quote</h3>
-        <p class="form-subtitle">We’ll call you back fast.</p>
+  <div class="hero-form-card">
+    <h3 class="form-title">Request a Free Quote</h3>
+    <p class="form-subtitle">We’ll call you back fast.</p>
 
-        <form class="quote-form">
-          <input type="text" name="fullName" placeholder="Full Name" required />
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-          <input type="email" name="email" placeholder="Email Address" required />
-          <textarea name="message" rows="4"
-            placeholder="Please let us know how we can help you..." required></textarea>
+    <form
+      class="quote-form js-quote-form"
+      action="https://formspree.io/f/xykprrlp"
+      method="POST"
+    >
+      <input type="hidden" name="_subject" value="📩 New Contact Request — Florida Man Plumbing">
+      <input type="text" name="_gotcha" style="display:none">
 
-          <button type="submit">Request a Free Quote</button>
-        </form>
+      <input name="fullName" type="text" placeholder="Full Name" required />
+      <input name="phone" type="tel" placeholder="Phone Number" required />
+      <input name="email" type="email" placeholder="Email Address" required />
+      <textarea name="message" rows="4" placeholder="Please let us know how we can help you..." required></textarea>
 
-        <p class="form-disclaimer">
-          By submitting, you agree to receive calls/texts. Msg/data rates may apply.
-        </p>
-      </div>
+      <button type="submit">Request a Free Quote</button>
+    </form>
+
+    <!-- THANK YOU (hidden until submit) -->
+    <div class="quote-thanks" style="display:none; text-align:center;">
+      <h3 class="form-title">Thank You!</h3>
+      <p class="form-subtitle">
+        We received your request and will call you shortly.
+      </p>
     </div>
 
+    <p class="form-disclaimer">
+      By submitting, you agree to receive calls/texts. Msg/data rates may apply.
+    </p>
   </div>
+</div>
+
 </section>
 
 <!-- LAST CTA -->
