@@ -271,5 +271,42 @@
 
 
 <script src="/js/main.js" defer></script>
+
+<script>
+(() => {
+  const forms = document.querySelectorAll(".js-quote-form");
+
+  forms.forEach((form) => {
+    const card = form.closest(".hero-form-card");
+    const thanks = card?.querySelector(".quote-thanks");
+
+    if (!card || !thanks) return;
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { "Accept": "application/json" }
+        });
+
+        if (response.ok) {
+          form.style.display = "none";
+          thanks.style.display = "block";
+        } else {
+          alert("Something went wrong. Please try again or call us.");
+        }
+      } catch (err) {
+        alert("Network error. Please try again.");
+      }
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
