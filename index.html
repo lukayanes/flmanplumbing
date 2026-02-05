@@ -549,7 +549,8 @@
 })();
 </script>
 
-<script>
+  
+<script> // JS FOR FORM SUBMISSION TO TEXT MESSAGE NOTIFICATION
 (() => {
   const forms = document.querySelectorAll(".quote-form");
 
@@ -559,8 +560,13 @@
 
     if (!card || !thanks) return;
 
+    let submitting = false; // 👈 ADD THIS
+
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+
+      if (submitting) return; // 👈 ADD THIS
+      submitting = true;      // 👈 ADD THIS
 
       const formData = new FormData(form);
 
@@ -574,15 +580,18 @@
           form.style.display = "none";
           thanks.style.display = "block";
         } else {
+          submitting = false; // 👈 reset on failure
           alert("Something went wrong. Please try again or call us.");
         }
       } catch (err) {
+        submitting = false; // 👈 reset on error
         alert("Network error. Please try again.");
       }
     });
   });
 })();
 </script>
+
 
 
 
