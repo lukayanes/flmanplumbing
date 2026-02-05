@@ -173,17 +173,40 @@
     <p class="form-subtitle">We’ll call you back fast.</p>
 
     <form
-      class="quote-form js-quote-form"
-      action="https://formspree.io/f/xykprrlp"
+      class="quote-form"
+      action="https://flmanplumbingsms.aubrey.workers.dev"
       method="POST"
     >
-      <input type="hidden" name="_subject" value="📩 New Contact Request — Florida Man Plumbing">
-      <input type="text" name="_gotcha" style="display:none">
+      <!-- Honeypot -->
+      <input type="hidden" name="_gotcha">
 
-      <input name="fullName" type="text" placeholder="Full Name" required />
-      <input name="phone" type="tel" placeholder="Phone Number" required />
-      <input name="email" type="email" placeholder="Email Address" required />
-      <textarea name="message" rows="4" placeholder="Please let us know how we can help you..." required></textarea>
+      <input
+        name="fullName"
+        type="text"
+        placeholder="Full Name"
+        required
+      />
+
+      <input
+        name="phone"
+        type="tel"
+        placeholder="Phone Number"
+        required
+      />
+
+      <input
+        name="email"
+        type="email"
+        placeholder="Email Address"
+        required
+      />
+
+      <textarea
+        name="message"
+        rows="4"
+        placeholder="Please let us know how we can help you..."
+        required
+      ></textarea>
 
       <button type="submit">Request a Free Quote</button>
     </form>
@@ -201,6 +224,7 @@
     </p>
   </div>
 </div>
+
 
 </section>
 
