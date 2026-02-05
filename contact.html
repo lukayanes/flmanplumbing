@@ -308,9 +308,9 @@
 
 <script src="/js/main.js" defer></script>
 
-<script>
+<script> // JS FOR FORM SUBMISSION TO TEXT MESSAGE NOTIFICATION
 (() => {
-  const forms = document.querySelectorAll(".js-quote-form");
+  const forms = document.querySelectorAll(".quote-form");
 
   forms.forEach((form) => {
     const card = form.closest(".hero-form-card");
@@ -318,31 +318,38 @@
 
     if (!card || !thanks) return;
 
+    let submitting = false; // 👈 ADD THIS
+
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+
+      if (submitting) return; // 👈 ADD THIS
+      submitting = true;      // 👈 ADD THIS
 
       const formData = new FormData(form);
 
       try {
         const response = await fetch(form.action, {
           method: form.method,
-          body: formData,
-          headers: { "Accept": "application/json" }
+          body: formData
         });
 
         if (response.ok) {
           form.style.display = "none";
           thanks.style.display = "block";
         } else {
+          submitting = false; // 👈 reset on failure
           alert("Something went wrong. Please try again or call us.");
         }
       } catch (err) {
+        submitting = false; // 👈 reset on error
         alert("Network error. Please try again.");
       }
     });
   });
 })();
 </script>
+
 
 </body>
 </html>
