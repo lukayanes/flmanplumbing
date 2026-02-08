@@ -1660,3 +1660,8 @@ select,
 .copyright-bar a:hover {
   color: var(--orange); /* same orange as contact links */
 }
+
+.site-footer a:hover {
+  color: var(--orange);
+}
+
