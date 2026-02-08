@@ -240,50 +240,75 @@
   </div>
 </section>
 
-<!-- FOOTER (fixed closing tags) -->
+<!-- ===============================
+     FOOTER
+================================ -->
 <footer class="site-footer">
   <div class="container footer-grid">
 
-    <!-- LEFT -->
+    <!-- BRAND -->
     <div class="footer-col footer-brand">
       <div class="footer-brand-row">
         <img class="footer-logo" src="./assets/logo1.webp" alt="Florida Man Plumbing Logo" />
         <p class="footer-text">
-          Florida Man Plumbing is a local plumbing company in Sarasota, Florida.
-          We offer residential plumbing services, including 24/7 emergency plumbing.
-          We’re proud to serve the community with fast response times and honest work—because your plumbing deserves the best.
+          Florida Man Plumbing is a licensed Sarasota plumbing company providing
+          residential services, repairs, and 24/7 emergency response.
+          Honest work. Fast response. No shortcuts.
         </p>
       </div>
     </div>
 
-    <!-- MIDDLE -->
+    <!-- SERVICES -->
     <div class="footer-col">
-      <h3>CONTACT INFO</h3>
-      <p class="footer-text">
-        Sarasota, FL <br />
-        <a href="mailto:anthony@flmanplumbing.com">anthony@flmanplumbing.com</a><br />
-        <a href="tel:19415250835">+1 (941) 525-0835 </a>
-      </p>
+      <h3>SERVICES</h3>
+      <ul class="footer-links">
+        <li><a href="./services/bathroom-plumbing.html">Bathroom Plumbing</a></li>
+        <li><a href="./services/drain-cleaning.html">Drain Cleaning</a></li>
+        <li><a href="./services/faucet-leak-repair.html">Faucet Leak Repair</a></li>
+        <li><a href="./services/gas-line-services.html">Gas Line Services</a></li>
+        <li><a href="./services/hydro-jetting.html">Hydro Jetting</a></li>
+        <li><a href="./services/water-filtration.html">Water Filtration</a></li>
+        <li><a href="./services/water-heater-repair.html">Water Heater Repair</a></li>
+        <li><a href="./services/residential-plumbing.html">Residential Plumbing</a></li>
+      </ul>
     </div>
 
-    <!-- RIGHT -->
+    <!-- COMPANY -->
     <div class="footer-col">
-      <h3>EMERGENCY PLUMBING</h3>
+      <h3>COMPANY</h3>
+      <ul class="footer-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./reviews.html">Reviews</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h3>CONTACT</h3>
       <p class="footer-text">
-        We understand that failed plumbing can be an emergency.
-        That’s why our team is here 24/7 to help assist you in the event you have a plumbing failure.
-        Don’t hesitate to call.
+        Sarasota, FL<br />
+        <a href="mailto:anthony@flmanplumbing.com">anthony@flmanplumbing.com</a><br />
+        <a href="tel:19415250835">(941) 525-0835</a>
       </p>
     </div>
 
   </div>
 </footer>
 
+<!-- ===============================
+     COPYRIGHT BAR
+================================ -->
 <section class="copyright-bar">
-  <div class="container">
-    <p>© <span id="year"></span> Florida Man Plumbing. All Rights Reserved.</p>
+  <div class="container copyright-inner">
+    <p>
+      © <span id="year"></span> Florida Man Plumbing. All Rights Reserved ·
+      <a href="./terms.html">Terms</a> ·
+      <a href="./privacy.html">Privacy</a>
+    </p>
   </div>
 </section>
+
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
