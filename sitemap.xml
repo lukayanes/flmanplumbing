@@ -5,79 +5,64 @@
   <!-- CORE PAGES -->
   <url>
     <loc>https://flmanplumbing.com/</loc>
-    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/about.html</loc>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services.html</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/contact.html</loc>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/reviews.html</loc>
-    <priority>0.7</priority>
   </url>
 
   <!-- SERVICE PAGES -->
   <url>
     <loc>https://flmanplumbing.com/services/bathroom-plumbing.html</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services/drain-cleaning.html</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services/faucet-leak-repair.html</loc>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services/gas-line-services.html</loc>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services/hydro-jetting.html</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services/residential-plumbing.html</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services/water-filtration.html</loc>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/services/water-heater-repair.html</loc>
-    <priority>0.9</priority>
   </url>
 
   <!-- LEGAL -->
   <url>
     <loc>https://flmanplumbing.com/privacy.html</loc>
-    <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://flmanplumbing.com/terms.html</loc>
-    <priority>0.3</priority>
   </url>
 
 </urlset>
