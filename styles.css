@@ -1584,3 +1584,46 @@ select,
 [contenteditable="true"] {
   caret-color: auto;
 }
+
+.footer-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li{
+  margin-bottom: 8px;
+}
+
+.footer-links a{
+  color: #cfd8e3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover{
+  color: #ffffff;
+}
+
+.copyright-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.copyright-links a{
+  color: #cfd8e3;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.copyright-links span{
+  margin: 0 6px;
+  color: #cfd8e3;
+}
+
+.copyright-links a:hover{
+  color: #ffffff;
+}
