@@ -1627,3 +1627,36 @@ select,
 .copyright-links a:hover{
   color: #ffffff;
 }
+
+/* ===============================
+   COPYRIGHT BAR (CENTERED)
+================================ */
+.copyright-bar {
+  background: #071427;
+  padding: 16px 0;
+}
+
+.copyright-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright-bar p {
+  margin: 0;
+  font-size: 14px;
+  color: #cfd8e3;
+}
+
+/* Match contact-link hover behavior */
+.copyright-bar a {
+  color: #cfd8e3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.copyright-bar a:hover {
+  color: var(--orange); /* same orange as contact links */
+}
