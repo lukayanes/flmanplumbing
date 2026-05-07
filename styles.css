@@ -1665,3 +1665,10 @@ select,
   color: var(--orange);
 }
 
+/* Hero scoping: only the first .about-split on any page */
+.about-split:first-of-type .about-body{
+  font-size: 20px;
+}
+.about-split:first-of-type .last-cta-phone{
+  color: #ffffff;
+}
